@@ -1,0 +1,5002 @@
+[
+  {
+    "title": "Effective Java - Edition 1",
+    "author": "Joshua Bloch",
+    "price": 40.36
+  },
+  {
+    "title": "Design Patterns - Edition 1",
+    "author": "Erich Gamma",
+    "price": 90.81
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 1",
+    "author": "Andrew Hunt",
+    "price": 39.12
+  },
+  {
+    "title": "Code Complete - Edition 1",
+    "author": "Steve McConnell",
+    "price": 45.71
+  },
+  {
+    "title": "Refactoring - Edition 1",
+    "author": "Martin Fowler",
+    "price": 28.5
+  },
+  {
+    "title": "The C Programming Language - Edition 1",
+    "author": "Brian W. Kernighan",
+    "price": 23.99
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 1",
+    "author": "Douglas Crockford",
+    "price": 33.93
+  },
+  {
+    "title": "You Don't Know JS - Edition 1",
+    "author": "Kyle Simpson",
+    "price": 50.84
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 1",
+    "author": "Marijn Haverbeke",
+    "price": 86.09
+  },
+  {
+    "title": "Learning Python - Edition 1",
+    "author": "Mark Lutz",
+    "price": 95.74
+  },
+  {
+    "title": "Fluent Python - Edition 1",
+    "author": "Luciano Ramalho",
+    "price": 48.2
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 1",
+    "author": "Gayle Laakmann McDowell",
+    "price": 60.14
+  },
+  {
+    "title": "Algorithm Design - Edition 1",
+    "author": "Jon Kleinberg",
+    "price": 41.17
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 1",
+    "author": "Thomas H. Cormen",
+    "price": 75.12
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 1",
+    "author": "Harold Abelson",
+    "price": 37.19
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 1",
+    "author": "Donald E. Knuth",
+    "price": 58.13
+  },
+  {
+    "title": "A Tour of C++ - Edition 1",
+    "author": "Bjarne Stroustrup",
+    "price": 22.67
+  },
+  {
+    "title": "Modern C++ Design - Edition 1",
+    "author": "Andrei Alexandrescu",
+    "price": 24.02
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 1",
+    "author": "Robert Seacord",
+    "price": 72.22
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 1",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 22.67
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 1",
+    "author": "Len Bass",
+    "price": 69.8
+  },
+  {
+    "title": "Release It! - Edition 1",
+    "author": "Michael T. Nygard",
+    "price": 33.8
+  },
+  {
+    "title": "Continuous Delivery - Edition 1",
+    "author": "Jez Humble",
+    "price": 50.45
+  },
+  {
+    "title": "DevOps Handbook - Edition 1",
+    "author": "Gene Kim",
+    "price": 76.38
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 1",
+    "author": "Betsy Beyer",
+    "price": 49.35
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 1",
+    "author": "Martin Kleppmann",
+    "price": 99.79
+  },
+  {
+    "title": "Database Internals - Edition 1",
+    "author": "Alex Petrov",
+    "price": 74.8
+  },
+  {
+    "title": "SQL Performance Explained - Edition 1",
+    "author": "Markus Winand",
+    "price": 32.89
+  },
+  {
+    "title": "High Performance MySQL - Edition 1",
+    "author": "Baron Schwartz",
+    "price": 68.16
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 1",
+    "author": "Kyle Banker",
+    "price": 25.61
+  },
+  {
+    "title": "Redis in Action - Edition 1",
+    "author": "Josiah L. Carlson",
+    "price": 98.47
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 1",
+    "author": "Jason Wilder",
+    "price": 72.66
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 1",
+    "author": "Dominik Petri",
+    "price": 63.14
+  },
+  {
+    "title": "Kubernetes in Action - Edition 1",
+    "author": "Kelsey Hightower",
+    "price": 55.24
+  },
+  {
+    "title": "Docker Deep Dive - Edition 1",
+    "author": "Nigel Poulton",
+    "price": 27.88
+  },
+  {
+    "title": "Cloud Native Go - Edition 1",
+    "author": "John Arundel",
+    "price": 73.94
+  },
+  {
+    "title": "Building Microservices - Edition 1",
+    "author": "Sam Newman",
+    "price": 79.62
+  },
+  {
+    "title": "Domain-Driven Design - Edition 1",
+    "author": "Eric Evans",
+    "price": 48.24
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 1",
+    "author": "Grady Booch",
+    "price": 91.4
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 1",
+    "author": "Gregor Hohpe",
+    "price": 79.32
+  },
+  {
+    "title": "System Design Interview - Edition 1",
+    "author": "Bobby Woolf",
+    "price": 67.16
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 1",
+    "author": "Alex Xu",
+    "price": 88.32
+  },
+  {
+    "title": "Deep Learning - Edition 1",
+    "author": "Andriy Burkov",
+    "price": 63.01
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 1",
+    "author": "Ian Goodfellow",
+    "price": 20.06
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 1",
+    "author": "Aurélien Géron",
+    "price": 27.75
+  },
+  {
+    "title": "Clean Code - Edition 2",
+    "author": "Alice Zheng",
+    "price": 75.16
+  },
+  {
+    "title": "Effective Java - Edition 2",
+    "author": "Robert C. Martin",
+    "price": 42.86
+  },
+  {
+    "title": "Design Patterns - Edition 2",
+    "author": "Joshua Bloch",
+    "price": 46.86
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 2",
+    "author": "Erich Gamma",
+    "price": 44.33
+  },
+  {
+    "title": "Code Complete - Edition 2",
+    "author": "Andrew Hunt",
+    "price": 86.28
+  },
+  {
+    "title": "Refactoring - Edition 2",
+    "author": "Steve McConnell",
+    "price": 20.64
+  },
+  {
+    "title": "The C Programming Language - Edition 2",
+    "author": "Martin Fowler",
+    "price": 85.45
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 2",
+    "author": "Brian W. Kernighan",
+    "price": 38.87
+  },
+  {
+    "title": "You Don't Know JS - Edition 2",
+    "author": "Douglas Crockford",
+    "price": 94.49
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 2",
+    "author": "Kyle Simpson",
+    "price": 56.72
+  },
+  {
+    "title": "Learning Python - Edition 2",
+    "author": "Marijn Haverbeke",
+    "price": 52.52
+  },
+  {
+    "title": "Fluent Python - Edition 2",
+    "author": "Mark Lutz",
+    "price": 36.24
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 2",
+    "author": "Luciano Ramalho",
+    "price": 72.93
+  },
+  {
+    "title": "Algorithm Design - Edition 2",
+    "author": "Gayle Laakmann McDowell",
+    "price": 77.46
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 2",
+    "author": "Jon Kleinberg",
+    "price": 31.07
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 2",
+    "author": "Thomas H. Cormen",
+    "price": 95.36
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 2",
+    "author": "Harold Abelson",
+    "price": 46.69
+  },
+  {
+    "title": "A Tour of C++ - Edition 2",
+    "author": "Donald E. Knuth",
+    "price": 94.21
+  },
+  {
+    "title": "Modern C++ Design - Edition 2",
+    "author": "Bjarne Stroustrup",
+    "price": 41.59
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 2",
+    "author": "Andrei Alexandrescu",
+    "price": 24.42
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 2",
+    "author": "Robert Seacord",
+    "price": 20.94
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 2",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 43.69
+  },
+  {
+    "title": "Release It! - Edition 2",
+    "author": "Len Bass",
+    "price": 35.6
+  },
+  {
+    "title": "Continuous Delivery - Edition 2",
+    "author": "Michael T. Nygard",
+    "price": 64.49
+  },
+  {
+    "title": "DevOps Handbook - Edition 2",
+    "author": "Jez Humble",
+    "price": 84.26
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 2",
+    "author": "Gene Kim",
+    "price": 91.21
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 2",
+    "author": "Betsy Beyer",
+    "price": 41.99
+  },
+  {
+    "title": "Database Internals - Edition 2",
+    "author": "Martin Kleppmann",
+    "price": 20.09
+  },
+  {
+    "title": "SQL Performance Explained - Edition 2",
+    "author": "Alex Petrov",
+    "price": 88.91
+  },
+  {
+    "title": "High Performance MySQL - Edition 2",
+    "author": "Markus Winand",
+    "price": 32.04
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 2",
+    "author": "Baron Schwartz",
+    "price": 73.75
+  },
+  {
+    "title": "Redis in Action - Edition 2",
+    "author": "Kyle Banker",
+    "price": 45
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 2",
+    "author": "Josiah L. Carlson",
+    "price": 60.39
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 2",
+    "author": "Jason Wilder",
+    "price": 35.62
+  },
+  {
+    "title": "Kubernetes in Action - Edition 2",
+    "author": "Dominik Petri",
+    "price": 29.86
+  },
+  {
+    "title": "Docker Deep Dive - Edition 2",
+    "author": "Kelsey Hightower",
+    "price": 42.92
+  },
+  {
+    "title": "Cloud Native Go - Edition 2",
+    "author": "Nigel Poulton",
+    "price": 93.48
+  },
+  {
+    "title": "Building Microservices - Edition 2",
+    "author": "John Arundel",
+    "price": 52.6
+  },
+  {
+    "title": "Domain-Driven Design - Edition 2",
+    "author": "Sam Newman",
+    "price": 53.92
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 2",
+    "author": "Eric Evans",
+    "price": 24.47
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 2",
+    "author": "Grady Booch",
+    "price": 87.46
+  },
+  {
+    "title": "System Design Interview - Edition 2",
+    "author": "Gregor Hohpe",
+    "price": 44.74
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 2",
+    "author": "Bobby Woolf",
+    "price": 36.91
+  },
+  {
+    "title": "Deep Learning - Edition 2",
+    "author": "Alex Xu",
+    "price": 32.48
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 2",
+    "author": "Andriy Burkov",
+    "price": 78.51
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 2",
+    "author": "Ian Goodfellow",
+    "price": 73.11
+  },
+  {
+    "title": "Clean Code - Edition 3",
+    "author": "Aurélien Géron",
+    "price": 43.99
+  },
+  {
+    "title": "Effective Java - Edition 3",
+    "author": "Alice Zheng",
+    "price": 25.78
+  },
+  {
+    "title": "Design Patterns - Edition 3",
+    "author": "Robert C. Martin",
+    "price": 74.74
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 3",
+    "author": "Joshua Bloch",
+    "price": 39.19
+  },
+  {
+    "title": "Code Complete - Edition 3",
+    "author": "Erich Gamma",
+    "price": 60.16
+  },
+  {
+    "title": "Refactoring - Edition 3",
+    "author": "Andrew Hunt",
+    "price": 30.35
+  },
+  {
+    "title": "The C Programming Language - Edition 3",
+    "author": "Steve McConnell",
+    "price": 62.92
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 3",
+    "author": "Martin Fowler",
+    "price": 79.83
+  },
+  {
+    "title": "You Don't Know JS - Edition 3",
+    "author": "Brian W. Kernighan",
+    "price": 25.13
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 3",
+    "author": "Douglas Crockford",
+    "price": 65.03
+  },
+  {
+    "title": "Learning Python - Edition 3",
+    "author": "Kyle Simpson",
+    "price": 83.7
+  },
+  {
+    "title": "Fluent Python - Edition 3",
+    "author": "Marijn Haverbeke",
+    "price": 25.67
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 3",
+    "author": "Mark Lutz",
+    "price": 55.22
+  },
+  {
+    "title": "Algorithm Design - Edition 3",
+    "author": "Luciano Ramalho",
+    "price": 29.56
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 3",
+    "author": "Gayle Laakmann McDowell",
+    "price": 89.72
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 3",
+    "author": "Jon Kleinberg",
+    "price": 93.28
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 3",
+    "author": "Thomas H. Cormen",
+    "price": 85.32
+  },
+  {
+    "title": "A Tour of C++ - Edition 3",
+    "author": "Harold Abelson",
+    "price": 56.72
+  },
+  {
+    "title": "Modern C++ Design - Edition 3",
+    "author": "Donald E. Knuth",
+    "price": 89.65
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 3",
+    "author": "Bjarne Stroustrup",
+    "price": 27.24
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 3",
+    "author": "Andrei Alexandrescu",
+    "price": 96.62
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 3",
+    "author": "Robert Seacord",
+    "price": 94.73
+  },
+  {
+    "title": "Release It! - Edition 3",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 72.25
+  },
+  {
+    "title": "Continuous Delivery - Edition 3",
+    "author": "Len Bass",
+    "price": 60
+  },
+  {
+    "title": "DevOps Handbook - Edition 3",
+    "author": "Michael T. Nygard",
+    "price": 97.5
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 3",
+    "author": "Jez Humble",
+    "price": 21.27
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 3",
+    "author": "Gene Kim",
+    "price": 60.51
+  },
+  {
+    "title": "Database Internals - Edition 3",
+    "author": "Betsy Beyer",
+    "price": 58.45
+  },
+  {
+    "title": "SQL Performance Explained - Edition 3",
+    "author": "Martin Kleppmann",
+    "price": 51.02
+  },
+  {
+    "title": "High Performance MySQL - Edition 3",
+    "author": "Alex Petrov",
+    "price": 44.68
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 3",
+    "author": "Markus Winand",
+    "price": 79.1
+  },
+  {
+    "title": "Redis in Action - Edition 3",
+    "author": "Baron Schwartz",
+    "price": 33.89
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 3",
+    "author": "Kyle Banker",
+    "price": 49.07
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 3",
+    "author": "Josiah L. Carlson",
+    "price": 23.67
+  },
+  {
+    "title": "Kubernetes in Action - Edition 3",
+    "author": "Jason Wilder",
+    "price": 33.62
+  },
+  {
+    "title": "Docker Deep Dive - Edition 3",
+    "author": "Dominik Petri",
+    "price": 23.95
+  },
+  {
+    "title": "Cloud Native Go - Edition 3",
+    "author": "Kelsey Hightower",
+    "price": 23.32
+  },
+  {
+    "title": "Building Microservices - Edition 3",
+    "author": "Nigel Poulton",
+    "price": 37.63
+  },
+  {
+    "title": "Domain-Driven Design - Edition 3",
+    "author": "John Arundel",
+    "price": 58.88
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 3",
+    "author": "Sam Newman",
+    "price": 49.47
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 3",
+    "author": "Eric Evans",
+    "price": 42.66
+  },
+  {
+    "title": "System Design Interview - Edition 3",
+    "author": "Grady Booch",
+    "price": 77.39
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 3",
+    "author": "Gregor Hohpe",
+    "price": 54.61
+  },
+  {
+    "title": "Deep Learning - Edition 3",
+    "author": "Bobby Woolf",
+    "price": 85.67
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 3",
+    "author": "Alex Xu",
+    "price": 21
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 3",
+    "author": "Andriy Burkov",
+    "price": 56.24
+  },
+  {
+    "title": "Clean Code - Edition 4",
+    "author": "Ian Goodfellow",
+    "price": 99.86
+  },
+  {
+    "title": "Effective Java - Edition 4",
+    "author": "Aurélien Géron",
+    "price": 35.64
+  },
+  {
+    "title": "Design Patterns - Edition 4",
+    "author": "Alice Zheng",
+    "price": 43.35
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 4",
+    "author": "Robert C. Martin",
+    "price": 94.38
+  },
+  {
+    "title": "Code Complete - Edition 4",
+    "author": "Joshua Bloch",
+    "price": 68.97
+  },
+  {
+    "title": "Refactoring - Edition 4",
+    "author": "Erich Gamma",
+    "price": 76.53
+  },
+  {
+    "title": "The C Programming Language - Edition 4",
+    "author": "Andrew Hunt",
+    "price": 71.5
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 4",
+    "author": "Steve McConnell",
+    "price": 59.6
+  },
+  {
+    "title": "You Don't Know JS - Edition 4",
+    "author": "Martin Fowler",
+    "price": 47.88
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 4",
+    "author": "Brian W. Kernighan",
+    "price": 55.16
+  },
+  {
+    "title": "Learning Python - Edition 4",
+    "author": "Douglas Crockford",
+    "price": 40.09
+  },
+  {
+    "title": "Fluent Python - Edition 4",
+    "author": "Kyle Simpson",
+    "price": 84.42
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 4",
+    "author": "Marijn Haverbeke",
+    "price": 83.73
+  },
+  {
+    "title": "Algorithm Design - Edition 4",
+    "author": "Mark Lutz",
+    "price": 65.58
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 4",
+    "author": "Luciano Ramalho",
+    "price": 21.56
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 4",
+    "author": "Gayle Laakmann McDowell",
+    "price": 91.47
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 4",
+    "author": "Jon Kleinberg",
+    "price": 83.14
+  },
+  {
+    "title": "A Tour of C++ - Edition 4",
+    "author": "Thomas H. Cormen",
+    "price": 82.24
+  },
+  {
+    "title": "Modern C++ Design - Edition 4",
+    "author": "Harold Abelson",
+    "price": 20.29
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 4",
+    "author": "Donald E. Knuth",
+    "price": 22.06
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 4",
+    "author": "Bjarne Stroustrup",
+    "price": 23.84
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 4",
+    "author": "Andrei Alexandrescu",
+    "price": 43.07
+  },
+  {
+    "title": "Release It! - Edition 4",
+    "author": "Robert Seacord",
+    "price": 99.8
+  },
+  {
+    "title": "Continuous Delivery - Edition 4",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 62.1
+  },
+  {
+    "title": "DevOps Handbook - Edition 4",
+    "author": "Len Bass",
+    "price": 47.24
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 4",
+    "author": "Michael T. Nygard",
+    "price": 97.48
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 4",
+    "author": "Jez Humble",
+    "price": 31.59
+  },
+  {
+    "title": "Database Internals - Edition 4",
+    "author": "Gene Kim",
+    "price": 66.02
+  },
+  {
+    "title": "SQL Performance Explained - Edition 4",
+    "author": "Betsy Beyer",
+    "price": 59.34
+  },
+  {
+    "title": "High Performance MySQL - Edition 4",
+    "author": "Martin Kleppmann",
+    "price": 87.52
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 4",
+    "author": "Alex Petrov",
+    "price": 23.74
+  },
+  {
+    "title": "Redis in Action - Edition 4",
+    "author": "Markus Winand",
+    "price": 97.32
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 4",
+    "author": "Baron Schwartz",
+    "price": 54.1
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 4",
+    "author": "Kyle Banker",
+    "price": 97.17
+  },
+  {
+    "title": "Kubernetes in Action - Edition 4",
+    "author": "Josiah L. Carlson",
+    "price": 79.18
+  },
+  {
+    "title": "Docker Deep Dive - Edition 4",
+    "author": "Jason Wilder",
+    "price": 58.05
+  },
+  {
+    "title": "Cloud Native Go - Edition 4",
+    "author": "Dominik Petri",
+    "price": 57.55
+  },
+  {
+    "title": "Building Microservices - Edition 4",
+    "author": "Kelsey Hightower",
+    "price": 21.44
+  },
+  {
+    "title": "Domain-Driven Design - Edition 4",
+    "author": "Nigel Poulton",
+    "price": 57.41
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 4",
+    "author": "John Arundel",
+    "price": 25.3
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 4",
+    "author": "Sam Newman",
+    "price": 81.82
+  },
+  {
+    "title": "System Design Interview - Edition 4",
+    "author": "Eric Evans",
+    "price": 26.75
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 4",
+    "author": "Grady Booch",
+    "price": 22.98
+  },
+  {
+    "title": "Deep Learning - Edition 4",
+    "author": "Gregor Hohpe",
+    "price": 29.64
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 4",
+    "author": "Bobby Woolf",
+    "price": 91.65
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 4",
+    "author": "Alex Xu",
+    "price": 48.37
+  },
+  {
+    "title": "Clean Code - Edition 5",
+    "author": "Andriy Burkov",
+    "price": 77.29
+  },
+  {
+    "title": "Effective Java - Edition 5",
+    "author": "Ian Goodfellow",
+    "price": 64.49
+  },
+  {
+    "title": "Design Patterns - Edition 5",
+    "author": "Aurélien Géron",
+    "price": 77.82
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 5",
+    "author": "Alice Zheng",
+    "price": 53.5
+  },
+  {
+    "title": "Code Complete - Edition 5",
+    "author": "Robert C. Martin",
+    "price": 83.62
+  },
+  {
+    "title": "Refactoring - Edition 5",
+    "author": "Joshua Bloch",
+    "price": 31.16
+  },
+  {
+    "title": "The C Programming Language - Edition 5",
+    "author": "Erich Gamma",
+    "price": 92.54
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 5",
+    "author": "Andrew Hunt",
+    "price": 21.27
+  },
+  {
+    "title": "You Don't Know JS - Edition 5",
+    "author": "Steve McConnell",
+    "price": 89.47
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 5",
+    "author": "Martin Fowler",
+    "price": 84.87
+  },
+  {
+    "title": "Learning Python - Edition 5",
+    "author": "Brian W. Kernighan",
+    "price": 66.77
+  },
+  {
+    "title": "Fluent Python - Edition 5",
+    "author": "Douglas Crockford",
+    "price": 45.05
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 5",
+    "author": "Kyle Simpson",
+    "price": 39.39
+  },
+  {
+    "title": "Algorithm Design - Edition 5",
+    "author": "Marijn Haverbeke",
+    "price": 26.28
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 5",
+    "author": "Mark Lutz",
+    "price": 67.88
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 5",
+    "author": "Luciano Ramalho",
+    "price": 72.18
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 5",
+    "author": "Gayle Laakmann McDowell",
+    "price": 60.52
+  },
+  {
+    "title": "A Tour of C++ - Edition 5",
+    "author": "Jon Kleinberg",
+    "price": 40.56
+  },
+  {
+    "title": "Modern C++ Design - Edition 5",
+    "author": "Thomas H. Cormen",
+    "price": 52.49
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 5",
+    "author": "Harold Abelson",
+    "price": 96.04
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 5",
+    "author": "Donald E. Knuth",
+    "price": 34.87
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 5",
+    "author": "Bjarne Stroustrup",
+    "price": 39.99
+  },
+  {
+    "title": "Release It! - Edition 5",
+    "author": "Andrei Alexandrescu",
+    "price": 37.57
+  },
+  {
+    "title": "Continuous Delivery - Edition 5",
+    "author": "Robert Seacord",
+    "price": 41.97
+  },
+  {
+    "title": "DevOps Handbook - Edition 5",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 53.59
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 5",
+    "author": "Len Bass",
+    "price": 56.63
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 5",
+    "author": "Michael T. Nygard",
+    "price": 60.42
+  },
+  {
+    "title": "Database Internals - Edition 5",
+    "author": "Jez Humble",
+    "price": 31.71
+  },
+  {
+    "title": "SQL Performance Explained - Edition 5",
+    "author": "Gene Kim",
+    "price": 60.54
+  },
+  {
+    "title": "High Performance MySQL - Edition 5",
+    "author": "Betsy Beyer",
+    "price": 58.82
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 5",
+    "author": "Martin Kleppmann",
+    "price": 73.28
+  },
+  {
+    "title": "Redis in Action - Edition 5",
+    "author": "Alex Petrov",
+    "price": 94.12
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 5",
+    "author": "Markus Winand",
+    "price": 62.87
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 5",
+    "author": "Baron Schwartz",
+    "price": 30.98
+  },
+  {
+    "title": "Kubernetes in Action - Edition 5",
+    "author": "Kyle Banker",
+    "price": 99.5
+  },
+  {
+    "title": "Docker Deep Dive - Edition 5",
+    "author": "Josiah L. Carlson",
+    "price": 73.99
+  },
+  {
+    "title": "Cloud Native Go - Edition 5",
+    "author": "Jason Wilder",
+    "price": 37.41
+  },
+  {
+    "title": "Building Microservices - Edition 5",
+    "author": "Dominik Petri",
+    "price": 90.55
+  },
+  {
+    "title": "Domain-Driven Design - Edition 5",
+    "author": "Kelsey Hightower",
+    "price": 72.65
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 5",
+    "author": "Nigel Poulton",
+    "price": 92.18
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 5",
+    "author": "John Arundel",
+    "price": 35.42
+  },
+  {
+    "title": "System Design Interview - Edition 5",
+    "author": "Sam Newman",
+    "price": 98.56
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 5",
+    "author": "Eric Evans",
+    "price": 21.21
+  },
+  {
+    "title": "Deep Learning - Edition 5",
+    "author": "Grady Booch",
+    "price": 21.8
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 5",
+    "author": "Gregor Hohpe",
+    "price": 72.88
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 5",
+    "author": "Bobby Woolf",
+    "price": 95.44
+  },
+  {
+    "title": "Clean Code - Edition 6",
+    "author": "Alex Xu",
+    "price": 63.86
+  },
+  {
+    "title": "Effective Java - Edition 6",
+    "author": "Andriy Burkov",
+    "price": 40.03
+  },
+  {
+    "title": "Design Patterns - Edition 6",
+    "author": "Ian Goodfellow",
+    "price": 69.13
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 6",
+    "author": "Aurélien Géron",
+    "price": 59.18
+  },
+  {
+    "title": "Code Complete - Edition 6",
+    "author": "Alice Zheng",
+    "price": 21.58
+  },
+  {
+    "title": "Refactoring - Edition 6",
+    "author": "Robert C. Martin",
+    "price": 95.95
+  },
+  {
+    "title": "The C Programming Language - Edition 6",
+    "author": "Joshua Bloch",
+    "price": 96.95
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 6",
+    "author": "Erich Gamma",
+    "price": 89.91
+  },
+  {
+    "title": "You Don't Know JS - Edition 6",
+    "author": "Andrew Hunt",
+    "price": 85.76
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 6",
+    "author": "Steve McConnell",
+    "price": 36.52
+  },
+  {
+    "title": "Learning Python - Edition 6",
+    "author": "Martin Fowler",
+    "price": 72.73
+  },
+  {
+    "title": "Fluent Python - Edition 6",
+    "author": "Brian W. Kernighan",
+    "price": 23.08
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 6",
+    "author": "Douglas Crockford",
+    "price": 29.25
+  },
+  {
+    "title": "Algorithm Design - Edition 6",
+    "author": "Kyle Simpson",
+    "price": 36.34
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 6",
+    "author": "Marijn Haverbeke",
+    "price": 40.23
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 6",
+    "author": "Mark Lutz",
+    "price": 56.65
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 6",
+    "author": "Luciano Ramalho",
+    "price": 63.82
+  },
+  {
+    "title": "A Tour of C++ - Edition 6",
+    "author": "Gayle Laakmann McDowell",
+    "price": 53.57
+  },
+  {
+    "title": "Modern C++ Design - Edition 6",
+    "author": "Jon Kleinberg",
+    "price": 78.71
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 6",
+    "author": "Thomas H. Cormen",
+    "price": 44.98
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 6",
+    "author": "Harold Abelson",
+    "price": 74.76
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 6",
+    "author": "Donald E. Knuth",
+    "price": 84.06
+  },
+  {
+    "title": "Release It! - Edition 6",
+    "author": "Bjarne Stroustrup",
+    "price": 75.8
+  },
+  {
+    "title": "Continuous Delivery - Edition 6",
+    "author": "Andrei Alexandrescu",
+    "price": 82.28
+  },
+  {
+    "title": "DevOps Handbook - Edition 6",
+    "author": "Robert Seacord",
+    "price": 23.11
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 6",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 63.87
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 6",
+    "author": "Len Bass",
+    "price": 44.08
+  },
+  {
+    "title": "Database Internals - Edition 6",
+    "author": "Michael T. Nygard",
+    "price": 46.68
+  },
+  {
+    "title": "SQL Performance Explained - Edition 6",
+    "author": "Jez Humble",
+    "price": 48.53
+  },
+  {
+    "title": "High Performance MySQL - Edition 6",
+    "author": "Gene Kim",
+    "price": 43.26
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 6",
+    "author": "Betsy Beyer",
+    "price": 55.78
+  },
+  {
+    "title": "Redis in Action - Edition 6",
+    "author": "Martin Kleppmann",
+    "price": 66.99
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 6",
+    "author": "Alex Petrov",
+    "price": 89.59
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 6",
+    "author": "Markus Winand",
+    "price": 35.86
+  },
+  {
+    "title": "Kubernetes in Action - Edition 6",
+    "author": "Baron Schwartz",
+    "price": 54.26
+  },
+  {
+    "title": "Docker Deep Dive - Edition 6",
+    "author": "Kyle Banker",
+    "price": 80.09
+  },
+  {
+    "title": "Cloud Native Go - Edition 6",
+    "author": "Josiah L. Carlson",
+    "price": 99.65
+  },
+  {
+    "title": "Building Microservices - Edition 6",
+    "author": "Jason Wilder",
+    "price": 30.62
+  },
+  {
+    "title": "Domain-Driven Design - Edition 6",
+    "author": "Dominik Petri",
+    "price": 41.8
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 6",
+    "author": "Kelsey Hightower",
+    "price": 51.72
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 6",
+    "author": "Nigel Poulton",
+    "price": 30.91
+  },
+  {
+    "title": "System Design Interview - Edition 6",
+    "author": "John Arundel",
+    "price": 74.05
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 6",
+    "author": "Sam Newman",
+    "price": 40.24
+  },
+  {
+    "title": "Deep Learning - Edition 6",
+    "author": "Eric Evans",
+    "price": 32.78
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 6",
+    "author": "Grady Booch",
+    "price": 64.47
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 6",
+    "author": "Gregor Hohpe",
+    "price": 68.68
+  },
+  {
+    "title": "Clean Code - Edition 7",
+    "author": "Bobby Woolf",
+    "price": 94.66
+  },
+  {
+    "title": "Effective Java - Edition 7",
+    "author": "Alex Xu",
+    "price": 63.41
+  },
+  {
+    "title": "Design Patterns - Edition 7",
+    "author": "Andriy Burkov",
+    "price": 30.54
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 7",
+    "author": "Ian Goodfellow",
+    "price": 52.05
+  },
+  {
+    "title": "Code Complete - Edition 7",
+    "author": "Aurélien Géron",
+    "price": 50.08
+  },
+  {
+    "title": "Refactoring - Edition 7",
+    "author": "Alice Zheng",
+    "price": 36.71
+  },
+  {
+    "title": "The C Programming Language - Edition 7",
+    "author": "Robert C. Martin",
+    "price": 39.18
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 7",
+    "author": "Joshua Bloch",
+    "price": 24.01
+  },
+  {
+    "title": "You Don't Know JS - Edition 7",
+    "author": "Erich Gamma",
+    "price": 49.65
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 7",
+    "author": "Andrew Hunt",
+    "price": 88.81
+  },
+  {
+    "title": "Learning Python - Edition 7",
+    "author": "Steve McConnell",
+    "price": 74.17
+  },
+  {
+    "title": "Fluent Python - Edition 7",
+    "author": "Martin Fowler",
+    "price": 36.19
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 7",
+    "author": "Brian W. Kernighan",
+    "price": 75.39
+  },
+  {
+    "title": "Algorithm Design - Edition 7",
+    "author": "Douglas Crockford",
+    "price": 76.47
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 7",
+    "author": "Kyle Simpson",
+    "price": 24.65
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 7",
+    "author": "Marijn Haverbeke",
+    "price": 40.7
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 7",
+    "author": "Mark Lutz",
+    "price": 72.37
+  },
+  {
+    "title": "A Tour of C++ - Edition 7",
+    "author": "Luciano Ramalho",
+    "price": 75.38
+  },
+  {
+    "title": "Modern C++ Design - Edition 7",
+    "author": "Gayle Laakmann McDowell",
+    "price": 83.47
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 7",
+    "author": "Jon Kleinberg",
+    "price": 28.22
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 7",
+    "author": "Thomas H. Cormen",
+    "price": 64.01
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 7",
+    "author": "Harold Abelson",
+    "price": 47.37
+  },
+  {
+    "title": "Release It! - Edition 7",
+    "author": "Donald E. Knuth",
+    "price": 65.42
+  },
+  {
+    "title": "Continuous Delivery - Edition 7",
+    "author": "Bjarne Stroustrup",
+    "price": 83.24
+  },
+  {
+    "title": "DevOps Handbook - Edition 7",
+    "author": "Andrei Alexandrescu",
+    "price": 36.25
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 7",
+    "author": "Robert Seacord",
+    "price": 98.04
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 7",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 52.42
+  },
+  {
+    "title": "Database Internals - Edition 7",
+    "author": "Len Bass",
+    "price": 42.98
+  },
+  {
+    "title": "SQL Performance Explained - Edition 7",
+    "author": "Michael T. Nygard",
+    "price": 42.38
+  },
+  {
+    "title": "High Performance MySQL - Edition 7",
+    "author": "Jez Humble",
+    "price": 53.76
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 7",
+    "author": "Gene Kim",
+    "price": 64.63
+  },
+  {
+    "title": "Redis in Action - Edition 7",
+    "author": "Betsy Beyer",
+    "price": 97.51
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 7",
+    "author": "Martin Kleppmann",
+    "price": 25.65
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 7",
+    "author": "Alex Petrov",
+    "price": 26.85
+  },
+  {
+    "title": "Kubernetes in Action - Edition 7",
+    "author": "Markus Winand",
+    "price": 93.33
+  },
+  {
+    "title": "Docker Deep Dive - Edition 7",
+    "author": "Baron Schwartz",
+    "price": 59.1
+  },
+  {
+    "title": "Cloud Native Go - Edition 7",
+    "author": "Kyle Banker",
+    "price": 40.12
+  },
+  {
+    "title": "Building Microservices - Edition 7",
+    "author": "Josiah L. Carlson",
+    "price": 78.9
+  },
+  {
+    "title": "Domain-Driven Design - Edition 7",
+    "author": "Jason Wilder",
+    "price": 72.64
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 7",
+    "author": "Dominik Petri",
+    "price": 29.05
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 7",
+    "author": "Kelsey Hightower",
+    "price": 74.16
+  },
+  {
+    "title": "System Design Interview - Edition 7",
+    "author": "Nigel Poulton",
+    "price": 79.73
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 7",
+    "author": "John Arundel",
+    "price": 30.99
+  },
+  {
+    "title": "Deep Learning - Edition 7",
+    "author": "Sam Newman",
+    "price": 81.46
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 7",
+    "author": "Eric Evans",
+    "price": 40.15
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 7",
+    "author": "Grady Booch",
+    "price": 44.19
+  },
+  {
+    "title": "Clean Code - Edition 8",
+    "author": "Gregor Hohpe",
+    "price": 58.12
+  },
+  {
+    "title": "Effective Java - Edition 8",
+    "author": "Bobby Woolf",
+    "price": 43.6
+  },
+  {
+    "title": "Design Patterns - Edition 8",
+    "author": "Alex Xu",
+    "price": 75.82
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 8",
+    "author": "Andriy Burkov",
+    "price": 97.38
+  },
+  {
+    "title": "Code Complete - Edition 8",
+    "author": "Ian Goodfellow",
+    "price": 56.36
+  },
+  {
+    "title": "Refactoring - Edition 8",
+    "author": "Aurélien Géron",
+    "price": 30.1
+  },
+  {
+    "title": "The C Programming Language - Edition 8",
+    "author": "Alice Zheng",
+    "price": 45.1
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 8",
+    "author": "Robert C. Martin",
+    "price": 57.69
+  },
+  {
+    "title": "You Don't Know JS - Edition 8",
+    "author": "Joshua Bloch",
+    "price": 91.93
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 8",
+    "author": "Erich Gamma",
+    "price": 29.07
+  },
+  {
+    "title": "Learning Python - Edition 8",
+    "author": "Andrew Hunt",
+    "price": 23.77
+  },
+  {
+    "title": "Fluent Python - Edition 8",
+    "author": "Steve McConnell",
+    "price": 37.04
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 8",
+    "author": "Martin Fowler",
+    "price": 72.02
+  },
+  {
+    "title": "Algorithm Design - Edition 8",
+    "author": "Brian W. Kernighan",
+    "price": 32.34
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 8",
+    "author": "Douglas Crockford",
+    "price": 22.7
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 8",
+    "author": "Kyle Simpson",
+    "price": 20.87
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 8",
+    "author": "Marijn Haverbeke",
+    "price": 25.52
+  },
+  {
+    "title": "A Tour of C++ - Edition 8",
+    "author": "Mark Lutz",
+    "price": 80.16
+  },
+  {
+    "title": "Modern C++ Design - Edition 8",
+    "author": "Luciano Ramalho",
+    "price": 69.06
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 8",
+    "author": "Gayle Laakmann McDowell",
+    "price": 48.5
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 8",
+    "author": "Jon Kleinberg",
+    "price": 59.18
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 8",
+    "author": "Thomas H. Cormen",
+    "price": 28.16
+  },
+  {
+    "title": "Release It! - Edition 8",
+    "author": "Harold Abelson",
+    "price": 50.54
+  },
+  {
+    "title": "Continuous Delivery - Edition 8",
+    "author": "Donald E. Knuth",
+    "price": 77.52
+  },
+  {
+    "title": "DevOps Handbook - Edition 8",
+    "author": "Bjarne Stroustrup",
+    "price": 25.59
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 8",
+    "author": "Andrei Alexandrescu",
+    "price": 70.79
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 8",
+    "author": "Robert Seacord",
+    "price": 78.65
+  },
+  {
+    "title": "Database Internals - Edition 8",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 75.66
+  },
+  {
+    "title": "SQL Performance Explained - Edition 8",
+    "author": "Len Bass",
+    "price": 21.05
+  },
+  {
+    "title": "High Performance MySQL - Edition 8",
+    "author": "Michael T. Nygard",
+    "price": 44.29
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 8",
+    "author": "Jez Humble",
+    "price": 45.78
+  },
+  {
+    "title": "Redis in Action - Edition 8",
+    "author": "Gene Kim",
+    "price": 28.04
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 8",
+    "author": "Betsy Beyer",
+    "price": 22.53
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 8",
+    "author": "Martin Kleppmann",
+    "price": 69.97
+  },
+  {
+    "title": "Kubernetes in Action - Edition 8",
+    "author": "Alex Petrov",
+    "price": 98.81
+  },
+  {
+    "title": "Docker Deep Dive - Edition 8",
+    "author": "Markus Winand",
+    "price": 85.32
+  },
+  {
+    "title": "Cloud Native Go - Edition 8",
+    "author": "Baron Schwartz",
+    "price": 80.57
+  },
+  {
+    "title": "Building Microservices - Edition 8",
+    "author": "Kyle Banker",
+    "price": 30.91
+  },
+  {
+    "title": "Domain-Driven Design - Edition 8",
+    "author": "Josiah L. Carlson",
+    "price": 31.6
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 8",
+    "author": "Jason Wilder",
+    "price": 94.83
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 8",
+    "author": "Dominik Petri",
+    "price": 31.54
+  },
+  {
+    "title": "System Design Interview - Edition 8",
+    "author": "Kelsey Hightower",
+    "price": 46.78
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 8",
+    "author": "Nigel Poulton",
+    "price": 99.03
+  },
+  {
+    "title": "Deep Learning - Edition 8",
+    "author": "John Arundel",
+    "price": 31.62
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 8",
+    "author": "Sam Newman",
+    "price": 93.98
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 8",
+    "author": "Eric Evans",
+    "price": 32.66
+  },
+  {
+    "title": "Clean Code - Edition 9",
+    "author": "Grady Booch",
+    "price": 50.69
+  },
+  {
+    "title": "Effective Java - Edition 9",
+    "author": "Gregor Hohpe",
+    "price": 57.38
+  },
+  {
+    "title": "Design Patterns - Edition 9",
+    "author": "Bobby Woolf",
+    "price": 56.02
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 9",
+    "author": "Alex Xu",
+    "price": 61.67
+  },
+  {
+    "title": "Code Complete - Edition 9",
+    "author": "Andriy Burkov",
+    "price": 76.52
+  },
+  {
+    "title": "Refactoring - Edition 9",
+    "author": "Ian Goodfellow",
+    "price": 77.18
+  },
+  {
+    "title": "The C Programming Language - Edition 9",
+    "author": "Aurélien Géron",
+    "price": 50.47
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 9",
+    "author": "Alice Zheng",
+    "price": 34.71
+  },
+  {
+    "title": "You Don't Know JS - Edition 9",
+    "author": "Robert C. Martin",
+    "price": 48.94
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 9",
+    "author": "Joshua Bloch",
+    "price": 32.45
+  },
+  {
+    "title": "Learning Python - Edition 9",
+    "author": "Erich Gamma",
+    "price": 71.89
+  },
+  {
+    "title": "Fluent Python - Edition 9",
+    "author": "Andrew Hunt",
+    "price": 70.91
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 9",
+    "author": "Steve McConnell",
+    "price": 41.03
+  },
+  {
+    "title": "Algorithm Design - Edition 9",
+    "author": "Martin Fowler",
+    "price": 44.11
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 9",
+    "author": "Brian W. Kernighan",
+    "price": 55.41
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 9",
+    "author": "Douglas Crockford",
+    "price": 57.12
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 9",
+    "author": "Kyle Simpson",
+    "price": 42.23
+  },
+  {
+    "title": "A Tour of C++ - Edition 9",
+    "author": "Marijn Haverbeke",
+    "price": 95.4
+  },
+  {
+    "title": "Modern C++ Design - Edition 9",
+    "author": "Mark Lutz",
+    "price": 84.47
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 9",
+    "author": "Luciano Ramalho",
+    "price": 50.36
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 9",
+    "author": "Gayle Laakmann McDowell",
+    "price": 44.72
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 9",
+    "author": "Jon Kleinberg",
+    "price": 51.07
+  },
+  {
+    "title": "Release It! - Edition 9",
+    "author": "Thomas H. Cormen",
+    "price": 95.42
+  },
+  {
+    "title": "Continuous Delivery - Edition 9",
+    "author": "Harold Abelson",
+    "price": 68.47
+  },
+  {
+    "title": "DevOps Handbook - Edition 9",
+    "author": "Donald E. Knuth",
+    "price": 75.16
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 9",
+    "author": "Bjarne Stroustrup",
+    "price": 23.11
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 9",
+    "author": "Andrei Alexandrescu",
+    "price": 98.37
+  },
+  {
+    "title": "Database Internals - Edition 9",
+    "author": "Robert Seacord",
+    "price": 86.02
+  },
+  {
+    "title": "SQL Performance Explained - Edition 9",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 39.78
+  },
+  {
+    "title": "High Performance MySQL - Edition 9",
+    "author": "Len Bass",
+    "price": 60.38
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 9",
+    "author": "Michael T. Nygard",
+    "price": 37.58
+  },
+  {
+    "title": "Redis in Action - Edition 9",
+    "author": "Jez Humble",
+    "price": 21.55
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 9",
+    "author": "Gene Kim",
+    "price": 53.04
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 9",
+    "author": "Betsy Beyer",
+    "price": 98.32
+  },
+  {
+    "title": "Kubernetes in Action - Edition 9",
+    "author": "Martin Kleppmann",
+    "price": 62.28
+  },
+  {
+    "title": "Docker Deep Dive - Edition 9",
+    "author": "Alex Petrov",
+    "price": 90.43
+  },
+  {
+    "title": "Cloud Native Go - Edition 9",
+    "author": "Markus Winand",
+    "price": 55.82
+  },
+  {
+    "title": "Building Microservices - Edition 9",
+    "author": "Baron Schwartz",
+    "price": 90.22
+  },
+  {
+    "title": "Domain-Driven Design - Edition 9",
+    "author": "Kyle Banker",
+    "price": 62.05
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 9",
+    "author": "Josiah L. Carlson",
+    "price": 35.58
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 9",
+    "author": "Jason Wilder",
+    "price": 25.2
+  },
+  {
+    "title": "System Design Interview - Edition 9",
+    "author": "Dominik Petri",
+    "price": 93.86
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 9",
+    "author": "Kelsey Hightower",
+    "price": 53.55
+  },
+  {
+    "title": "Deep Learning - Edition 9",
+    "author": "Nigel Poulton",
+    "price": 55.98
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 9",
+    "author": "John Arundel",
+    "price": 22.56
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 9",
+    "author": "Sam Newman",
+    "price": 60.55
+  },
+  {
+    "title": "Clean Code - Edition 10",
+    "author": "Eric Evans",
+    "price": 52.07
+  },
+  {
+    "title": "Effective Java - Edition 10",
+    "author": "Grady Booch",
+    "price": 47.07
+  },
+  {
+    "title": "Design Patterns - Edition 10",
+    "author": "Gregor Hohpe",
+    "price": 57.76
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 10",
+    "author": "Bobby Woolf",
+    "price": 56.45
+  },
+  {
+    "title": "Code Complete - Edition 10",
+    "author": "Alex Xu",
+    "price": 87.87
+  },
+  {
+    "title": "Refactoring - Edition 10",
+    "author": "Andriy Burkov",
+    "price": 77.35
+  },
+  {
+    "title": "The C Programming Language - Edition 10",
+    "author": "Ian Goodfellow",
+    "price": 20.12
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 10",
+    "author": "Aurélien Géron",
+    "price": 63.03
+  },
+  {
+    "title": "You Don't Know JS - Edition 10",
+    "author": "Alice Zheng",
+    "price": 62.91
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 10",
+    "author": "Robert C. Martin",
+    "price": 74.11
+  },
+  {
+    "title": "Learning Python - Edition 10",
+    "author": "Joshua Bloch",
+    "price": 58.27
+  },
+  {
+    "title": "Fluent Python - Edition 10",
+    "author": "Erich Gamma",
+    "price": 41.1
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 10",
+    "author": "Andrew Hunt",
+    "price": 46.67
+  },
+  {
+    "title": "Algorithm Design - Edition 10",
+    "author": "Steve McConnell",
+    "price": 66.13
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 10",
+    "author": "Martin Fowler",
+    "price": 77.92
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 10",
+    "author": "Brian W. Kernighan",
+    "price": 51.33
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 10",
+    "author": "Douglas Crockford",
+    "price": 60.33
+  },
+  {
+    "title": "A Tour of C++ - Edition 10",
+    "author": "Kyle Simpson",
+    "price": 50.04
+  },
+  {
+    "title": "Modern C++ Design - Edition 10",
+    "author": "Marijn Haverbeke",
+    "price": 45.54
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 10",
+    "author": "Mark Lutz",
+    "price": 96.15
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 10",
+    "author": "Luciano Ramalho",
+    "price": 29.15
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 10",
+    "author": "Gayle Laakmann McDowell",
+    "price": 76.62
+  },
+  {
+    "title": "Release It! - Edition 10",
+    "author": "Jon Kleinberg",
+    "price": 22.07
+  },
+  {
+    "title": "Continuous Delivery - Edition 10",
+    "author": "Thomas H. Cormen",
+    "price": 76.56
+  },
+  {
+    "title": "DevOps Handbook - Edition 10",
+    "author": "Harold Abelson",
+    "price": 76.19
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 10",
+    "author": "Donald E. Knuth",
+    "price": 85.12
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 10",
+    "author": "Bjarne Stroustrup",
+    "price": 92.69
+  },
+  {
+    "title": "Database Internals - Edition 10",
+    "author": "Andrei Alexandrescu",
+    "price": 71.46
+  },
+  {
+    "title": "SQL Performance Explained - Edition 10",
+    "author": "Robert Seacord",
+    "price": 63.35
+  },
+  {
+    "title": "High Performance MySQL - Edition 10",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 48.32
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 10",
+    "author": "Len Bass",
+    "price": 93.82
+  },
+  {
+    "title": "Redis in Action - Edition 10",
+    "author": "Michael T. Nygard",
+    "price": 80.18
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 10",
+    "author": "Jez Humble",
+    "price": 25.37
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 10",
+    "author": "Gene Kim",
+    "price": 33.84
+  },
+  {
+    "title": "Kubernetes in Action - Edition 10",
+    "author": "Betsy Beyer",
+    "price": 80.99
+  },
+  {
+    "title": "Docker Deep Dive - Edition 10",
+    "author": "Martin Kleppmann",
+    "price": 27.99
+  },
+  {
+    "title": "Cloud Native Go - Edition 10",
+    "author": "Alex Petrov",
+    "price": 40.22
+  },
+  {
+    "title": "Building Microservices - Edition 10",
+    "author": "Markus Winand",
+    "price": 82.8
+  },
+  {
+    "title": "Domain-Driven Design - Edition 10",
+    "author": "Baron Schwartz",
+    "price": 90.03
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 10",
+    "author": "Kyle Banker",
+    "price": 93.02
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 10",
+    "author": "Josiah L. Carlson",
+    "price": 29.13
+  },
+  {
+    "title": "System Design Interview - Edition 10",
+    "author": "Jason Wilder",
+    "price": 23.55
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 10",
+    "author": "Dominik Petri",
+    "price": 24.13
+  },
+  {
+    "title": "Deep Learning - Edition 10",
+    "author": "Kelsey Hightower",
+    "price": 81.97
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 10",
+    "author": "Nigel Poulton",
+    "price": 56.26
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 10",
+    "author": "John Arundel",
+    "price": 57.61
+  },
+  {
+    "title": "Clean Code - Edition 11",
+    "author": "Sam Newman",
+    "price": 77.08
+  },
+  {
+    "title": "Effective Java - Edition 11",
+    "author": "Eric Evans",
+    "price": 57.58
+  },
+  {
+    "title": "Design Patterns - Edition 11",
+    "author": "Grady Booch",
+    "price": 32.19
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 11",
+    "author": "Gregor Hohpe",
+    "price": 29.91
+  },
+  {
+    "title": "Code Complete - Edition 11",
+    "author": "Bobby Woolf",
+    "price": 25.07
+  },
+  {
+    "title": "Refactoring - Edition 11",
+    "author": "Alex Xu",
+    "price": 76.62
+  },
+  {
+    "title": "The C Programming Language - Edition 11",
+    "author": "Andriy Burkov",
+    "price": 53.84
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 11",
+    "author": "Ian Goodfellow",
+    "price": 54.6
+  },
+  {
+    "title": "You Don't Know JS - Edition 11",
+    "author": "Aurélien Géron",
+    "price": 48.71
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 11",
+    "author": "Alice Zheng",
+    "price": 64.81
+  },
+  {
+    "title": "Learning Python - Edition 11",
+    "author": "Robert C. Martin",
+    "price": 84.13
+  },
+  {
+    "title": "Fluent Python - Edition 11",
+    "author": "Joshua Bloch",
+    "price": 73.18
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 11",
+    "author": "Erich Gamma",
+    "price": 39.68
+  },
+  {
+    "title": "Algorithm Design - Edition 11",
+    "author": "Andrew Hunt",
+    "price": 92.63
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 11",
+    "author": "Steve McConnell",
+    "price": 27.33
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 11",
+    "author": "Martin Fowler",
+    "price": 79.94
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 11",
+    "author": "Brian W. Kernighan",
+    "price": 21.65
+  },
+  {
+    "title": "A Tour of C++ - Edition 11",
+    "author": "Douglas Crockford",
+    "price": 69.79
+  },
+  {
+    "title": "Modern C++ Design - Edition 11",
+    "author": "Kyle Simpson",
+    "price": 70.08
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 11",
+    "author": "Marijn Haverbeke",
+    "price": 72.62
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 11",
+    "author": "Mark Lutz",
+    "price": 67.44
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 11",
+    "author": "Luciano Ramalho",
+    "price": 49.72
+  },
+  {
+    "title": "Release It! - Edition 11",
+    "author": "Gayle Laakmann McDowell",
+    "price": 38.57
+  },
+  {
+    "title": "Continuous Delivery - Edition 11",
+    "author": "Jon Kleinberg",
+    "price": 38.78
+  },
+  {
+    "title": "DevOps Handbook - Edition 11",
+    "author": "Thomas H. Cormen",
+    "price": 39.75
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 11",
+    "author": "Harold Abelson",
+    "price": 25.19
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 11",
+    "author": "Donald E. Knuth",
+    "price": 73.28
+  },
+  {
+    "title": "Database Internals - Edition 11",
+    "author": "Bjarne Stroustrup",
+    "price": 95.61
+  },
+  {
+    "title": "SQL Performance Explained - Edition 11",
+    "author": "Andrei Alexandrescu",
+    "price": 28.9
+  },
+  {
+    "title": "High Performance MySQL - Edition 11",
+    "author": "Robert Seacord",
+    "price": 77.94
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 11",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 89.26
+  },
+  {
+    "title": "Redis in Action - Edition 11",
+    "author": "Len Bass",
+    "price": 82.72
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 11",
+    "author": "Michael T. Nygard",
+    "price": 49.47
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 11",
+    "author": "Jez Humble",
+    "price": 70.93
+  },
+  {
+    "title": "Kubernetes in Action - Edition 11",
+    "author": "Gene Kim",
+    "price": 94.93
+  },
+  {
+    "title": "Docker Deep Dive - Edition 11",
+    "author": "Betsy Beyer",
+    "price": 87.46
+  },
+  {
+    "title": "Cloud Native Go - Edition 11",
+    "author": "Martin Kleppmann",
+    "price": 54.99
+  },
+  {
+    "title": "Building Microservices - Edition 11",
+    "author": "Alex Petrov",
+    "price": 20.77
+  },
+  {
+    "title": "Domain-Driven Design - Edition 11",
+    "author": "Markus Winand",
+    "price": 54.93
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 11",
+    "author": "Baron Schwartz",
+    "price": 66.26
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 11",
+    "author": "Kyle Banker",
+    "price": 82.07
+  },
+  {
+    "title": "System Design Interview - Edition 11",
+    "author": "Josiah L. Carlson",
+    "price": 73.76
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 11",
+    "author": "Jason Wilder",
+    "price": 79.15
+  },
+  {
+    "title": "Deep Learning - Edition 11",
+    "author": "Dominik Petri",
+    "price": 36.96
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 11",
+    "author": "Kelsey Hightower",
+    "price": 34.27
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 11",
+    "author": "Nigel Poulton",
+    "price": 82.72
+  },
+  {
+    "title": "Clean Code - Edition 12",
+    "author": "John Arundel",
+    "price": 57.07
+  },
+  {
+    "title": "Effective Java - Edition 12",
+    "author": "Sam Newman",
+    "price": 48.25
+  },
+  {
+    "title": "Design Patterns - Edition 12",
+    "author": "Eric Evans",
+    "price": 26.11
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 12",
+    "author": "Grady Booch",
+    "price": 41.72
+  },
+  {
+    "title": "Code Complete - Edition 12",
+    "author": "Gregor Hohpe",
+    "price": 98.4
+  },
+  {
+    "title": "Refactoring - Edition 12",
+    "author": "Bobby Woolf",
+    "price": 23.34
+  },
+  {
+    "title": "The C Programming Language - Edition 12",
+    "author": "Alex Xu",
+    "price": 70.22
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 12",
+    "author": "Andriy Burkov",
+    "price": 85.35
+  },
+  {
+    "title": "You Don't Know JS - Edition 12",
+    "author": "Ian Goodfellow",
+    "price": 64.9
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 12",
+    "author": "Aurélien Géron",
+    "price": 38.77
+  },
+  {
+    "title": "Learning Python - Edition 12",
+    "author": "Alice Zheng",
+    "price": 40.31
+  },
+  {
+    "title": "Fluent Python - Edition 12",
+    "author": "Robert C. Martin",
+    "price": 73.16
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 12",
+    "author": "Joshua Bloch",
+    "price": 90.47
+  },
+  {
+    "title": "Algorithm Design - Edition 12",
+    "author": "Erich Gamma",
+    "price": 36.11
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 12",
+    "author": "Andrew Hunt",
+    "price": 73.9
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 12",
+    "author": "Steve McConnell",
+    "price": 59.89
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 12",
+    "author": "Martin Fowler",
+    "price": 38.27
+  },
+  {
+    "title": "A Tour of C++ - Edition 12",
+    "author": "Brian W. Kernighan",
+    "price": 55.07
+  },
+  {
+    "title": "Modern C++ Design - Edition 12",
+    "author": "Douglas Crockford",
+    "price": 94.24
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 12",
+    "author": "Kyle Simpson",
+    "price": 89.61
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 12",
+    "author": "Marijn Haverbeke",
+    "price": 33.8
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 12",
+    "author": "Mark Lutz",
+    "price": 66.7
+  },
+  {
+    "title": "Release It! - Edition 12",
+    "author": "Luciano Ramalho",
+    "price": 47.74
+  },
+  {
+    "title": "Continuous Delivery - Edition 12",
+    "author": "Gayle Laakmann McDowell",
+    "price": 51.63
+  },
+  {
+    "title": "DevOps Handbook - Edition 12",
+    "author": "Jon Kleinberg",
+    "price": 32.1
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 12",
+    "author": "Thomas H. Cormen",
+    "price": 92.17
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 12",
+    "author": "Harold Abelson",
+    "price": 20.71
+  },
+  {
+    "title": "Database Internals - Edition 12",
+    "author": "Donald E. Knuth",
+    "price": 99
+  },
+  {
+    "title": "SQL Performance Explained - Edition 12",
+    "author": "Bjarne Stroustrup",
+    "price": 43.66
+  },
+  {
+    "title": "High Performance MySQL - Edition 12",
+    "author": "Andrei Alexandrescu",
+    "price": 27.84
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 12",
+    "author": "Robert Seacord",
+    "price": 42.97
+  },
+  {
+    "title": "Redis in Action - Edition 12",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 35.14
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 12",
+    "author": "Len Bass",
+    "price": 78.67
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 12",
+    "author": "Michael T. Nygard",
+    "price": 99.74
+  },
+  {
+    "title": "Kubernetes in Action - Edition 12",
+    "author": "Jez Humble",
+    "price": 73.89
+  },
+  {
+    "title": "Docker Deep Dive - Edition 12",
+    "author": "Gene Kim",
+    "price": 79.22
+  },
+  {
+    "title": "Cloud Native Go - Edition 12",
+    "author": "Betsy Beyer",
+    "price": 78.06
+  },
+  {
+    "title": "Building Microservices - Edition 12",
+    "author": "Martin Kleppmann",
+    "price": 79.86
+  },
+  {
+    "title": "Domain-Driven Design - Edition 12",
+    "author": "Alex Petrov",
+    "price": 70.26
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 12",
+    "author": "Markus Winand",
+    "price": 52.47
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 12",
+    "author": "Baron Schwartz",
+    "price": 77.43
+  },
+  {
+    "title": "System Design Interview - Edition 12",
+    "author": "Kyle Banker",
+    "price": 83.68
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 12",
+    "author": "Josiah L. Carlson",
+    "price": 70.04
+  },
+  {
+    "title": "Deep Learning - Edition 12",
+    "author": "Jason Wilder",
+    "price": 64.94
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 12",
+    "author": "Dominik Petri",
+    "price": 88.7
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 12",
+    "author": "Kelsey Hightower",
+    "price": 50.68
+  },
+  {
+    "title": "Clean Code - Edition 13",
+    "author": "Nigel Poulton",
+    "price": 55.13
+  },
+  {
+    "title": "Effective Java - Edition 13",
+    "author": "John Arundel",
+    "price": 33.17
+  },
+  {
+    "title": "Design Patterns - Edition 13",
+    "author": "Sam Newman",
+    "price": 22.73
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 13",
+    "author": "Eric Evans",
+    "price": 26.46
+  },
+  {
+    "title": "Code Complete - Edition 13",
+    "author": "Grady Booch",
+    "price": 34.36
+  },
+  {
+    "title": "Refactoring - Edition 13",
+    "author": "Gregor Hohpe",
+    "price": 28.7
+  },
+  {
+    "title": "The C Programming Language - Edition 13",
+    "author": "Bobby Woolf",
+    "price": 62.17
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 13",
+    "author": "Alex Xu",
+    "price": 46.36
+  },
+  {
+    "title": "You Don't Know JS - Edition 13",
+    "author": "Andriy Burkov",
+    "price": 78.64
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 13",
+    "author": "Ian Goodfellow",
+    "price": 28.9
+  },
+  {
+    "title": "Learning Python - Edition 13",
+    "author": "Aurélien Géron",
+    "price": 69.13
+  },
+  {
+    "title": "Fluent Python - Edition 13",
+    "author": "Alice Zheng",
+    "price": 78.8
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 13",
+    "author": "Robert C. Martin",
+    "price": 70.43
+  },
+  {
+    "title": "Algorithm Design - Edition 13",
+    "author": "Joshua Bloch",
+    "price": 36.42
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 13",
+    "author": "Erich Gamma",
+    "price": 68.72
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 13",
+    "author": "Andrew Hunt",
+    "price": 32.39
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 13",
+    "author": "Steve McConnell",
+    "price": 85.24
+  },
+  {
+    "title": "A Tour of C++ - Edition 13",
+    "author": "Martin Fowler",
+    "price": 81.41
+  },
+  {
+    "title": "Modern C++ Design - Edition 13",
+    "author": "Brian W. Kernighan",
+    "price": 65.2
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 13",
+    "author": "Douglas Crockford",
+    "price": 98.66
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 13",
+    "author": "Kyle Simpson",
+    "price": 30.05
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 13",
+    "author": "Marijn Haverbeke",
+    "price": 94.25
+  },
+  {
+    "title": "Release It! - Edition 13",
+    "author": "Mark Lutz",
+    "price": 56.84
+  },
+  {
+    "title": "Continuous Delivery - Edition 13",
+    "author": "Luciano Ramalho",
+    "price": 22.35
+  },
+  {
+    "title": "DevOps Handbook - Edition 13",
+    "author": "Gayle Laakmann McDowell",
+    "price": 72.17
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 13",
+    "author": "Jon Kleinberg",
+    "price": 99.2
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 13",
+    "author": "Thomas H. Cormen",
+    "price": 88.14
+  },
+  {
+    "title": "Database Internals - Edition 13",
+    "author": "Harold Abelson",
+    "price": 98.75
+  },
+  {
+    "title": "SQL Performance Explained - Edition 13",
+    "author": "Donald E. Knuth",
+    "price": 71.03
+  },
+  {
+    "title": "High Performance MySQL - Edition 13",
+    "author": "Bjarne Stroustrup",
+    "price": 36.34
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 13",
+    "author": "Andrei Alexandrescu",
+    "price": 42.13
+  },
+  {
+    "title": "Redis in Action - Edition 13",
+    "author": "Robert Seacord",
+    "price": 37.4
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 13",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 72.66
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 13",
+    "author": "Len Bass",
+    "price": 24.68
+  },
+  {
+    "title": "Kubernetes in Action - Edition 13",
+    "author": "Michael T. Nygard",
+    "price": 77.02
+  },
+  {
+    "title": "Docker Deep Dive - Edition 13",
+    "author": "Jez Humble",
+    "price": 88.18
+  },
+  {
+    "title": "Cloud Native Go - Edition 13",
+    "author": "Gene Kim",
+    "price": 22.42
+  },
+  {
+    "title": "Building Microservices - Edition 13",
+    "author": "Betsy Beyer",
+    "price": 84.62
+  },
+  {
+    "title": "Domain-Driven Design - Edition 13",
+    "author": "Martin Kleppmann",
+    "price": 92.68
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 13",
+    "author": "Alex Petrov",
+    "price": 62.14
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 13",
+    "author": "Markus Winand",
+    "price": 28.6
+  },
+  {
+    "title": "System Design Interview - Edition 13",
+    "author": "Baron Schwartz",
+    "price": 28.62
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 13",
+    "author": "Kyle Banker",
+    "price": 88.45
+  },
+  {
+    "title": "Deep Learning - Edition 13",
+    "author": "Josiah L. Carlson",
+    "price": 39.15
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 13",
+    "author": "Jason Wilder",
+    "price": 35.38
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 13",
+    "author": "Dominik Petri",
+    "price": 94.56
+  },
+  {
+    "title": "Clean Code - Edition 14",
+    "author": "Kelsey Hightower",
+    "price": 43.79
+  },
+  {
+    "title": "Effective Java - Edition 14",
+    "author": "Nigel Poulton",
+    "price": 66.78
+  },
+  {
+    "title": "Design Patterns - Edition 14",
+    "author": "John Arundel",
+    "price": 95.24
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 14",
+    "author": "Sam Newman",
+    "price": 51.28
+  },
+  {
+    "title": "Code Complete - Edition 14",
+    "author": "Eric Evans",
+    "price": 58.43
+  },
+  {
+    "title": "Refactoring - Edition 14",
+    "author": "Grady Booch",
+    "price": 37.97
+  },
+  {
+    "title": "The C Programming Language - Edition 14",
+    "author": "Gregor Hohpe",
+    "price": 63.34
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 14",
+    "author": "Bobby Woolf",
+    "price": 34.42
+  },
+  {
+    "title": "You Don't Know JS - Edition 14",
+    "author": "Alex Xu",
+    "price": 74.23
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 14",
+    "author": "Andriy Burkov",
+    "price": 48.25
+  },
+  {
+    "title": "Learning Python - Edition 14",
+    "author": "Ian Goodfellow",
+    "price": 89.73
+  },
+  {
+    "title": "Fluent Python - Edition 14",
+    "author": "Aurélien Géron",
+    "price": 54.87
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 14",
+    "author": "Alice Zheng",
+    "price": 65.28
+  },
+  {
+    "title": "Algorithm Design - Edition 14",
+    "author": "Robert C. Martin",
+    "price": 82.85
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 14",
+    "author": "Joshua Bloch",
+    "price": 72.6
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 14",
+    "author": "Erich Gamma",
+    "price": 64.07
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 14",
+    "author": "Andrew Hunt",
+    "price": 35.29
+  },
+  {
+    "title": "A Tour of C++ - Edition 14",
+    "author": "Steve McConnell",
+    "price": 28.89
+  },
+  {
+    "title": "Modern C++ Design - Edition 14",
+    "author": "Martin Fowler",
+    "price": 67.22
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 14",
+    "author": "Brian W. Kernighan",
+    "price": 49.47
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 14",
+    "author": "Douglas Crockford",
+    "price": 77.56
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 14",
+    "author": "Kyle Simpson",
+    "price": 84.36
+  },
+  {
+    "title": "Release It! - Edition 14",
+    "author": "Marijn Haverbeke",
+    "price": 83.81
+  },
+  {
+    "title": "Continuous Delivery - Edition 14",
+    "author": "Mark Lutz",
+    "price": 61.95
+  },
+  {
+    "title": "DevOps Handbook - Edition 14",
+    "author": "Luciano Ramalho",
+    "price": 76.64
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 14",
+    "author": "Gayle Laakmann McDowell",
+    "price": 78.21
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 14",
+    "author": "Jon Kleinberg",
+    "price": 50.09
+  },
+  {
+    "title": "Database Internals - Edition 14",
+    "author": "Thomas H. Cormen",
+    "price": 85.47
+  },
+  {
+    "title": "SQL Performance Explained - Edition 14",
+    "author": "Harold Abelson",
+    "price": 59.65
+  },
+  {
+    "title": "High Performance MySQL - Edition 14",
+    "author": "Donald E. Knuth",
+    "price": 51.78
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 14",
+    "author": "Bjarne Stroustrup",
+    "price": 99.23
+  },
+  {
+    "title": "Redis in Action - Edition 14",
+    "author": "Andrei Alexandrescu",
+    "price": 37.39
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 14",
+    "author": "Robert Seacord",
+    "price": 63.62
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 14",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 94.68
+  },
+  {
+    "title": "Kubernetes in Action - Edition 14",
+    "author": "Len Bass",
+    "price": 52.33
+  },
+  {
+    "title": "Docker Deep Dive - Edition 14",
+    "author": "Michael T. Nygard",
+    "price": 50.1
+  },
+  {
+    "title": "Cloud Native Go - Edition 14",
+    "author": "Jez Humble",
+    "price": 87.96
+  },
+  {
+    "title": "Building Microservices - Edition 14",
+    "author": "Gene Kim",
+    "price": 57.46
+  },
+  {
+    "title": "Domain-Driven Design - Edition 14",
+    "author": "Betsy Beyer",
+    "price": 34.07
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 14",
+    "author": "Martin Kleppmann",
+    "price": 42.51
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 14",
+    "author": "Alex Petrov",
+    "price": 48.64
+  },
+  {
+    "title": "System Design Interview - Edition 14",
+    "author": "Markus Winand",
+    "price": 94.51
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 14",
+    "author": "Baron Schwartz",
+    "price": 77.97
+  },
+  {
+    "title": "Deep Learning - Edition 14",
+    "author": "Kyle Banker",
+    "price": 72.35
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 14",
+    "author": "Josiah L. Carlson",
+    "price": 91.21
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 14",
+    "author": "Jason Wilder",
+    "price": 78.92
+  },
+  {
+    "title": "Clean Code - Edition 15",
+    "author": "Dominik Petri",
+    "price": 59.89
+  },
+  {
+    "title": "Effective Java - Edition 15",
+    "author": "Kelsey Hightower",
+    "price": 29.79
+  },
+  {
+    "title": "Design Patterns - Edition 15",
+    "author": "Nigel Poulton",
+    "price": 69.76
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 15",
+    "author": "John Arundel",
+    "price": 58.12
+  },
+  {
+    "title": "Code Complete - Edition 15",
+    "author": "Sam Newman",
+    "price": 49.2
+  },
+  {
+    "title": "Refactoring - Edition 15",
+    "author": "Eric Evans",
+    "price": 47.29
+  },
+  {
+    "title": "The C Programming Language - Edition 15",
+    "author": "Grady Booch",
+    "price": 90.64
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 15",
+    "author": "Gregor Hohpe",
+    "price": 93.22
+  },
+  {
+    "title": "You Don't Know JS - Edition 15",
+    "author": "Bobby Woolf",
+    "price": 29.22
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 15",
+    "author": "Alex Xu",
+    "price": 69.81
+  },
+  {
+    "title": "Learning Python - Edition 15",
+    "author": "Andriy Burkov",
+    "price": 65.02
+  },
+  {
+    "title": "Fluent Python - Edition 15",
+    "author": "Ian Goodfellow",
+    "price": 22.74
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 15",
+    "author": "Aurélien Géron",
+    "price": 53.46
+  },
+  {
+    "title": "Algorithm Design - Edition 15",
+    "author": "Alice Zheng",
+    "price": 55.92
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 15",
+    "author": "Robert C. Martin",
+    "price": 82.2
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 15",
+    "author": "Joshua Bloch",
+    "price": 28.34
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 15",
+    "author": "Erich Gamma",
+    "price": 30.35
+  },
+  {
+    "title": "A Tour of C++ - Edition 15",
+    "author": "Andrew Hunt",
+    "price": 92.73
+  },
+  {
+    "title": "Modern C++ Design - Edition 15",
+    "author": "Steve McConnell",
+    "price": 80.39
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 15",
+    "author": "Martin Fowler",
+    "price": 98.27
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 15",
+    "author": "Brian W. Kernighan",
+    "price": 20.4
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 15",
+    "author": "Douglas Crockford",
+    "price": 66.74
+  },
+  {
+    "title": "Release It! - Edition 15",
+    "author": "Kyle Simpson",
+    "price": 42.53
+  },
+  {
+    "title": "Continuous Delivery - Edition 15",
+    "author": "Marijn Haverbeke",
+    "price": 86.97
+  },
+  {
+    "title": "DevOps Handbook - Edition 15",
+    "author": "Mark Lutz",
+    "price": 46.44
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 15",
+    "author": "Luciano Ramalho",
+    "price": 48.09
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 15",
+    "author": "Gayle Laakmann McDowell",
+    "price": 85.7
+  },
+  {
+    "title": "Database Internals - Edition 15",
+    "author": "Jon Kleinberg",
+    "price": 81.65
+  },
+  {
+    "title": "SQL Performance Explained - Edition 15",
+    "author": "Thomas H. Cormen",
+    "price": 77.77
+  },
+  {
+    "title": "High Performance MySQL - Edition 15",
+    "author": "Harold Abelson",
+    "price": 67.78
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 15",
+    "author": "Donald E. Knuth",
+    "price": 55.93
+  },
+  {
+    "title": "Redis in Action - Edition 15",
+    "author": "Bjarne Stroustrup",
+    "price": 61.51
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 15",
+    "author": "Andrei Alexandrescu",
+    "price": 66.12
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 15",
+    "author": "Robert Seacord",
+    "price": 31.71
+  },
+  {
+    "title": "Kubernetes in Action - Edition 15",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 45.68
+  },
+  {
+    "title": "Docker Deep Dive - Edition 15",
+    "author": "Len Bass",
+    "price": 51.2
+  },
+  {
+    "title": "Cloud Native Go - Edition 15",
+    "author": "Michael T. Nygard",
+    "price": 99.9
+  },
+  {
+    "title": "Building Microservices - Edition 15",
+    "author": "Jez Humble",
+    "price": 63.5
+  },
+  {
+    "title": "Domain-Driven Design - Edition 15",
+    "author": "Gene Kim",
+    "price": 51.06
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 15",
+    "author": "Betsy Beyer",
+    "price": 51.77
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 15",
+    "author": "Martin Kleppmann",
+    "price": 62.07
+  },
+  {
+    "title": "System Design Interview - Edition 15",
+    "author": "Alex Petrov",
+    "price": 39.61
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 15",
+    "author": "Markus Winand",
+    "price": 65.88
+  },
+  {
+    "title": "Deep Learning - Edition 15",
+    "author": "Baron Schwartz",
+    "price": 53.52
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 15",
+    "author": "Kyle Banker",
+    "price": 31.53
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 15",
+    "author": "Josiah L. Carlson",
+    "price": 82.24
+  },
+  {
+    "title": "Clean Code - Edition 16",
+    "author": "Jason Wilder",
+    "price": 24.02
+  },
+  {
+    "title": "Effective Java - Edition 16",
+    "author": "Dominik Petri",
+    "price": 31.9
+  },
+  {
+    "title": "Design Patterns - Edition 16",
+    "author": "Kelsey Hightower",
+    "price": 73.07
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 16",
+    "author": "Nigel Poulton",
+    "price": 28.21
+  },
+  {
+    "title": "Code Complete - Edition 16",
+    "author": "John Arundel",
+    "price": 87.32
+  },
+  {
+    "title": "Refactoring - Edition 16",
+    "author": "Sam Newman",
+    "price": 45.66
+  },
+  {
+    "title": "The C Programming Language - Edition 16",
+    "author": "Eric Evans",
+    "price": 25.78
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 16",
+    "author": "Grady Booch",
+    "price": 77.52
+  },
+  {
+    "title": "You Don't Know JS - Edition 16",
+    "author": "Gregor Hohpe",
+    "price": 67.95
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 16",
+    "author": "Bobby Woolf",
+    "price": 24.55
+  },
+  {
+    "title": "Learning Python - Edition 16",
+    "author": "Alex Xu",
+    "price": 47.58
+  },
+  {
+    "title": "Fluent Python - Edition 16",
+    "author": "Andriy Burkov",
+    "price": 47.95
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 16",
+    "author": "Ian Goodfellow",
+    "price": 69.14
+  },
+  {
+    "title": "Algorithm Design - Edition 16",
+    "author": "Aurélien Géron",
+    "price": 57.6
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 16",
+    "author": "Alice Zheng",
+    "price": 31.22
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 16",
+    "author": "Robert C. Martin",
+    "price": 62.16
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 16",
+    "author": "Joshua Bloch",
+    "price": 78.78
+  },
+  {
+    "title": "A Tour of C++ - Edition 16",
+    "author": "Erich Gamma",
+    "price": 38.72
+  },
+  {
+    "title": "Modern C++ Design - Edition 16",
+    "author": "Andrew Hunt",
+    "price": 58.13
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 16",
+    "author": "Steve McConnell",
+    "price": 75.86
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 16",
+    "author": "Martin Fowler",
+    "price": 68.29
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 16",
+    "author": "Brian W. Kernighan",
+    "price": 23.23
+  },
+  {
+    "title": "Release It! - Edition 16",
+    "author": "Douglas Crockford",
+    "price": 57.28
+  },
+  {
+    "title": "Continuous Delivery - Edition 16",
+    "author": "Kyle Simpson",
+    "price": 97.94
+  },
+  {
+    "title": "DevOps Handbook - Edition 16",
+    "author": "Marijn Haverbeke",
+    "price": 74.88
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 16",
+    "author": "Mark Lutz",
+    "price": 57.46
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 16",
+    "author": "Luciano Ramalho",
+    "price": 83.04
+  },
+  {
+    "title": "Database Internals - Edition 16",
+    "author": "Gayle Laakmann McDowell",
+    "price": 93.88
+  },
+  {
+    "title": "SQL Performance Explained - Edition 16",
+    "author": "Jon Kleinberg",
+    "price": 26.84
+  },
+  {
+    "title": "High Performance MySQL - Edition 16",
+    "author": "Thomas H. Cormen",
+    "price": 77.86
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 16",
+    "author": "Harold Abelson",
+    "price": 64.58
+  },
+  {
+    "title": "Redis in Action - Edition 16",
+    "author": "Donald E. Knuth",
+    "price": 26.56
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 16",
+    "author": "Bjarne Stroustrup",
+    "price": 78.38
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 16",
+    "author": "Andrei Alexandrescu",
+    "price": 24.48
+  },
+  {
+    "title": "Kubernetes in Action - Edition 16",
+    "author": "Robert Seacord",
+    "price": 39.86
+  },
+  {
+    "title": "Docker Deep Dive - Edition 16",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 41.96
+  },
+  {
+    "title": "Cloud Native Go - Edition 16",
+    "author": "Len Bass",
+    "price": 93.96
+  },
+  {
+    "title": "Building Microservices - Edition 16",
+    "author": "Michael T. Nygard",
+    "price": 65.04
+  },
+  {
+    "title": "Domain-Driven Design - Edition 16",
+    "author": "Jez Humble",
+    "price": 44.68
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 16",
+    "author": "Gene Kim",
+    "price": 91.32
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 16",
+    "author": "Betsy Beyer",
+    "price": 49.43
+  },
+  {
+    "title": "System Design Interview - Edition 16",
+    "author": "Martin Kleppmann",
+    "price": 81.69
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 16",
+    "author": "Alex Petrov",
+    "price": 49.36
+  },
+  {
+    "title": "Deep Learning - Edition 16",
+    "author": "Markus Winand",
+    "price": 35.73
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 16",
+    "author": "Baron Schwartz",
+    "price": 84.61
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 16",
+    "author": "Kyle Banker",
+    "price": 55.53
+  },
+  {
+    "title": "Clean Code - Edition 17",
+    "author": "Josiah L. Carlson",
+    "price": 41.22
+  },
+  {
+    "title": "Effective Java - Edition 17",
+    "author": "Jason Wilder",
+    "price": 36.94
+  },
+  {
+    "title": "Design Patterns - Edition 17",
+    "author": "Dominik Petri",
+    "price": 38.61
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 17",
+    "author": "Kelsey Hightower",
+    "price": 42.43
+  },
+  {
+    "title": "Code Complete - Edition 17",
+    "author": "Nigel Poulton",
+    "price": 80.72
+  },
+  {
+    "title": "Refactoring - Edition 17",
+    "author": "John Arundel",
+    "price": 94.54
+  },
+  {
+    "title": "The C Programming Language - Edition 17",
+    "author": "Sam Newman",
+    "price": 70.11
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 17",
+    "author": "Eric Evans",
+    "price": 29.17
+  },
+  {
+    "title": "You Don't Know JS - Edition 17",
+    "author": "Grady Booch",
+    "price": 33.26
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 17",
+    "author": "Gregor Hohpe",
+    "price": 28.61
+  },
+  {
+    "title": "Learning Python - Edition 17",
+    "author": "Bobby Woolf",
+    "price": 26.25
+  },
+  {
+    "title": "Fluent Python - Edition 17",
+    "author": "Alex Xu",
+    "price": 50.18
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 17",
+    "author": "Andriy Burkov",
+    "price": 73.25
+  },
+  {
+    "title": "Algorithm Design - Edition 17",
+    "author": "Ian Goodfellow",
+    "price": 78.04
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 17",
+    "author": "Aurélien Géron",
+    "price": 47.1
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 17",
+    "author": "Alice Zheng",
+    "price": 58.88
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 17",
+    "author": "Robert C. Martin",
+    "price": 91.99
+  },
+  {
+    "title": "A Tour of C++ - Edition 17",
+    "author": "Joshua Bloch",
+    "price": 23.98
+  },
+  {
+    "title": "Modern C++ Design - Edition 17",
+    "author": "Erich Gamma",
+    "price": 32.02
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 17",
+    "author": "Andrew Hunt",
+    "price": 79.81
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 17",
+    "author": "Steve McConnell",
+    "price": 99.42
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 17",
+    "author": "Martin Fowler",
+    "price": 65.47
+  },
+  {
+    "title": "Release It! - Edition 17",
+    "author": "Brian W. Kernighan",
+    "price": 49.46
+  },
+  {
+    "title": "Continuous Delivery - Edition 17",
+    "author": "Douglas Crockford",
+    "price": 61.49
+  },
+  {
+    "title": "DevOps Handbook - Edition 17",
+    "author": "Kyle Simpson",
+    "price": 63.35
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 17",
+    "author": "Marijn Haverbeke",
+    "price": 96.26
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 17",
+    "author": "Mark Lutz",
+    "price": 48.74
+  },
+  {
+    "title": "Database Internals - Edition 17",
+    "author": "Luciano Ramalho",
+    "price": 87.19
+  },
+  {
+    "title": "SQL Performance Explained - Edition 17",
+    "author": "Gayle Laakmann McDowell",
+    "price": 87.3
+  },
+  {
+    "title": "High Performance MySQL - Edition 17",
+    "author": "Jon Kleinberg",
+    "price": 53.05
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 17",
+    "author": "Thomas H. Cormen",
+    "price": 81.84
+  },
+  {
+    "title": "Redis in Action - Edition 17",
+    "author": "Harold Abelson",
+    "price": 35.18
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 17",
+    "author": "Donald E. Knuth",
+    "price": 82.61
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 17",
+    "author": "Bjarne Stroustrup",
+    "price": 90.58
+  },
+  {
+    "title": "Kubernetes in Action - Edition 17",
+    "author": "Andrei Alexandrescu",
+    "price": 73.77
+  },
+  {
+    "title": "Docker Deep Dive - Edition 17",
+    "author": "Robert Seacord",
+    "price": 50.25
+  },
+  {
+    "title": "Cloud Native Go - Edition 17",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 53.86
+  },
+  {
+    "title": "Building Microservices - Edition 17",
+    "author": "Len Bass",
+    "price": 68.23
+  },
+  {
+    "title": "Domain-Driven Design - Edition 17",
+    "author": "Michael T. Nygard",
+    "price": 90.24
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 17",
+    "author": "Jez Humble",
+    "price": 60.41
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 17",
+    "author": "Gene Kim",
+    "price": 37.24
+  },
+  {
+    "title": "System Design Interview - Edition 17",
+    "author": "Betsy Beyer",
+    "price": 64.86
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 17",
+    "author": "Martin Kleppmann",
+    "price": 22.72
+  },
+  {
+    "title": "Deep Learning - Edition 17",
+    "author": "Alex Petrov",
+    "price": 53
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 17",
+    "author": "Markus Winand",
+    "price": 34.39
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 17",
+    "author": "Baron Schwartz",
+    "price": 93.53
+  },
+  {
+    "title": "Clean Code - Edition 18",
+    "author": "Kyle Banker",
+    "price": 68.02
+  },
+  {
+    "title": "Effective Java - Edition 18",
+    "author": "Josiah L. Carlson",
+    "price": 72.61
+  },
+  {
+    "title": "Design Patterns - Edition 18",
+    "author": "Jason Wilder",
+    "price": 63.83
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 18",
+    "author": "Dominik Petri",
+    "price": 85.4
+  },
+  {
+    "title": "Code Complete - Edition 18",
+    "author": "Kelsey Hightower",
+    "price": 55.21
+  },
+  {
+    "title": "Refactoring - Edition 18",
+    "author": "Nigel Poulton",
+    "price": 88.35
+  },
+  {
+    "title": "The C Programming Language - Edition 18",
+    "author": "John Arundel",
+    "price": 48.04
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 18",
+    "author": "Sam Newman",
+    "price": 73.19
+  },
+  {
+    "title": "You Don't Know JS - Edition 18",
+    "author": "Eric Evans",
+    "price": 65.97
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 18",
+    "author": "Grady Booch",
+    "price": 36.23
+  },
+  {
+    "title": "Learning Python - Edition 18",
+    "author": "Gregor Hohpe",
+    "price": 63.54
+  },
+  {
+    "title": "Fluent Python - Edition 18",
+    "author": "Bobby Woolf",
+    "price": 32.46
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 18",
+    "author": "Alex Xu",
+    "price": 95.99
+  },
+  {
+    "title": "Algorithm Design - Edition 18",
+    "author": "Andriy Burkov",
+    "price": 21.59
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 18",
+    "author": "Ian Goodfellow",
+    "price": 28.3
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 18",
+    "author": "Aurélien Géron",
+    "price": 59.37
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 18",
+    "author": "Alice Zheng",
+    "price": 58.04
+  },
+  {
+    "title": "A Tour of C++ - Edition 18",
+    "author": "Robert C. Martin",
+    "price": 66.34
+  },
+  {
+    "title": "Modern C++ Design - Edition 18",
+    "author": "Joshua Bloch",
+    "price": 49.05
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 18",
+    "author": "Erich Gamma",
+    "price": 82.91
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 18",
+    "author": "Andrew Hunt",
+    "price": 24.96
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 18",
+    "author": "Steve McConnell",
+    "price": 61.21
+  },
+  {
+    "title": "Release It! - Edition 18",
+    "author": "Martin Fowler",
+    "price": 64.56
+  },
+  {
+    "title": "Continuous Delivery - Edition 18",
+    "author": "Brian W. Kernighan",
+    "price": 73.58
+  },
+  {
+    "title": "DevOps Handbook - Edition 18",
+    "author": "Douglas Crockford",
+    "price": 80.35
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 18",
+    "author": "Kyle Simpson",
+    "price": 89.79
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 18",
+    "author": "Marijn Haverbeke",
+    "price": 95.83
+  },
+  {
+    "title": "Database Internals - Edition 18",
+    "author": "Mark Lutz",
+    "price": 49.8
+  },
+  {
+    "title": "SQL Performance Explained - Edition 18",
+    "author": "Luciano Ramalho",
+    "price": 61.33
+  },
+  {
+    "title": "High Performance MySQL - Edition 18",
+    "author": "Gayle Laakmann McDowell",
+    "price": 82.11
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 18",
+    "author": "Jon Kleinberg",
+    "price": 45.63
+  },
+  {
+    "title": "Redis in Action - Edition 18",
+    "author": "Thomas H. Cormen",
+    "price": 48.53
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 18",
+    "author": "Harold Abelson",
+    "price": 79.47
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 18",
+    "author": "Donald E. Knuth",
+    "price": 44.29
+  },
+  {
+    "title": "Kubernetes in Action - Edition 18",
+    "author": "Bjarne Stroustrup",
+    "price": 39.17
+  },
+  {
+    "title": "Docker Deep Dive - Edition 18",
+    "author": "Andrei Alexandrescu",
+    "price": 61.32
+  },
+  {
+    "title": "Cloud Native Go - Edition 18",
+    "author": "Robert Seacord",
+    "price": 68.16
+  },
+  {
+    "title": "Building Microservices - Edition 18",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 70.76
+  },
+  {
+    "title": "Domain-Driven Design - Edition 18",
+    "author": "Len Bass",
+    "price": 25.81
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 18",
+    "author": "Michael T. Nygard",
+    "price": 93.9
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 18",
+    "author": "Jez Humble",
+    "price": 60.43
+  },
+  {
+    "title": "System Design Interview - Edition 18",
+    "author": "Gene Kim",
+    "price": 45.62
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 18",
+    "author": "Betsy Beyer",
+    "price": 87.95
+  },
+  {
+    "title": "Deep Learning - Edition 18",
+    "author": "Martin Kleppmann",
+    "price": 79.22
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 18",
+    "author": "Alex Petrov",
+    "price": 20.41
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 18",
+    "author": "Markus Winand",
+    "price": 36.02
+  },
+  {
+    "title": "Clean Code - Edition 19",
+    "author": "Baron Schwartz",
+    "price": 54.09
+  },
+  {
+    "title": "Effective Java - Edition 19",
+    "author": "Kyle Banker",
+    "price": 58.43
+  },
+  {
+    "title": "Design Patterns - Edition 19",
+    "author": "Josiah L. Carlson",
+    "price": 42.04
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 19",
+    "author": "Jason Wilder",
+    "price": 44.52
+  },
+  {
+    "title": "Code Complete - Edition 19",
+    "author": "Dominik Petri",
+    "price": 53.68
+  },
+  {
+    "title": "Refactoring - Edition 19",
+    "author": "Kelsey Hightower",
+    "price": 27.69
+  },
+  {
+    "title": "The C Programming Language - Edition 19",
+    "author": "Nigel Poulton",
+    "price": 22.36
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 19",
+    "author": "John Arundel",
+    "price": 28.07
+  },
+  {
+    "title": "You Don't Know JS - Edition 19",
+    "author": "Sam Newman",
+    "price": 69.62
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 19",
+    "author": "Eric Evans",
+    "price": 82.73
+  },
+  {
+    "title": "Learning Python - Edition 19",
+    "author": "Grady Booch",
+    "price": 76.64
+  },
+  {
+    "title": "Fluent Python - Edition 19",
+    "author": "Gregor Hohpe",
+    "price": 62.55
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 19",
+    "author": "Bobby Woolf",
+    "price": 62.09
+  },
+  {
+    "title": "Algorithm Design - Edition 19",
+    "author": "Alex Xu",
+    "price": 35.43
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 19",
+    "author": "Andriy Burkov",
+    "price": 27.09
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 19",
+    "author": "Ian Goodfellow",
+    "price": 97.68
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 19",
+    "author": "Aurélien Géron",
+    "price": 76.36
+  },
+  {
+    "title": "A Tour of C++ - Edition 19",
+    "author": "Alice Zheng",
+    "price": 59.45
+  },
+  {
+    "title": "Modern C++ Design - Edition 19",
+    "author": "Robert C. Martin",
+    "price": 48.27
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 19",
+    "author": "Joshua Bloch",
+    "price": 75.61
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 19",
+    "author": "Erich Gamma",
+    "price": 61.79
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 19",
+    "author": "Andrew Hunt",
+    "price": 79.21
+  },
+  {
+    "title": "Release It! - Edition 19",
+    "author": "Steve McConnell",
+    "price": 95.39
+  },
+  {
+    "title": "Continuous Delivery - Edition 19",
+    "author": "Martin Fowler",
+    "price": 31.91
+  },
+  {
+    "title": "DevOps Handbook - Edition 19",
+    "author": "Brian W. Kernighan",
+    "price": 53.85
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 19",
+    "author": "Douglas Crockford",
+    "price": 54.33
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 19",
+    "author": "Kyle Simpson",
+    "price": 62.79
+  },
+  {
+    "title": "Database Internals - Edition 19",
+    "author": "Marijn Haverbeke",
+    "price": 71.02
+  },
+  {
+    "title": "SQL Performance Explained - Edition 19",
+    "author": "Mark Lutz",
+    "price": 26.58
+  },
+  {
+    "title": "High Performance MySQL - Edition 19",
+    "author": "Luciano Ramalho",
+    "price": 65.67
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 19",
+    "author": "Gayle Laakmann McDowell",
+    "price": 50.15
+  },
+  {
+    "title": "Redis in Action - Edition 19",
+    "author": "Jon Kleinberg",
+    "price": 43.15
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 19",
+    "author": "Thomas H. Cormen",
+    "price": 52.51
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 19",
+    "author": "Harold Abelson",
+    "price": 32.25
+  },
+  {
+    "title": "Kubernetes in Action - Edition 19",
+    "author": "Donald E. Knuth",
+    "price": 57.65
+  },
+  {
+    "title": "Docker Deep Dive - Edition 19",
+    "author": "Bjarne Stroustrup",
+    "price": 62
+  },
+  {
+    "title": "Cloud Native Go - Edition 19",
+    "author": "Andrei Alexandrescu",
+    "price": 86.76
+  },
+  {
+    "title": "Building Microservices - Edition 19",
+    "author": "Robert Seacord",
+    "price": 40.52
+  },
+  {
+    "title": "Domain-Driven Design - Edition 19",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 37.5
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 19",
+    "author": "Len Bass",
+    "price": 43.21
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 19",
+    "author": "Michael T. Nygard",
+    "price": 86.1
+  },
+  {
+    "title": "System Design Interview - Edition 19",
+    "author": "Jez Humble",
+    "price": 82.42
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 19",
+    "author": "Gene Kim",
+    "price": 43.14
+  },
+  {
+    "title": "Deep Learning - Edition 19",
+    "author": "Betsy Beyer",
+    "price": 29.4
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 19",
+    "author": "Martin Kleppmann",
+    "price": 82.92
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 19",
+    "author": "Alex Petrov",
+    "price": 26.24
+  },
+  {
+    "title": "Clean Code - Edition 20",
+    "author": "Markus Winand",
+    "price": 96.1
+  },
+  {
+    "title": "Effective Java - Edition 20",
+    "author": "Baron Schwartz",
+    "price": 74.74
+  },
+  {
+    "title": "Design Patterns - Edition 20",
+    "author": "Kyle Banker",
+    "price": 47.93
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 20",
+    "author": "Josiah L. Carlson",
+    "price": 48.21
+  },
+  {
+    "title": "Code Complete - Edition 20",
+    "author": "Jason Wilder",
+    "price": 97.76
+  },
+  {
+    "title": "Refactoring - Edition 20",
+    "author": "Dominik Petri",
+    "price": 82.54
+  },
+  {
+    "title": "The C Programming Language - Edition 20",
+    "author": "Kelsey Hightower",
+    "price": 51.12
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 20",
+    "author": "Nigel Poulton",
+    "price": 20.36
+  },
+  {
+    "title": "You Don't Know JS - Edition 20",
+    "author": "John Arundel",
+    "price": 62.77
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 20",
+    "author": "Sam Newman",
+    "price": 44.89
+  },
+  {
+    "title": "Learning Python - Edition 20",
+    "author": "Eric Evans",
+    "price": 75.91
+  },
+  {
+    "title": "Fluent Python - Edition 20",
+    "author": "Grady Booch",
+    "price": 96.13
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 20",
+    "author": "Gregor Hohpe",
+    "price": 70.14
+  },
+  {
+    "title": "Algorithm Design - Edition 20",
+    "author": "Bobby Woolf",
+    "price": 90.33
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 20",
+    "author": "Alex Xu",
+    "price": 98.52
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 20",
+    "author": "Andriy Burkov",
+    "price": 77.5
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 20",
+    "author": "Ian Goodfellow",
+    "price": 37.95
+  },
+  {
+    "title": "A Tour of C++ - Edition 20",
+    "author": "Aurélien Géron",
+    "price": 59.92
+  },
+  {
+    "title": "Modern C++ Design - Edition 20",
+    "author": "Alice Zheng",
+    "price": 95.41
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 20",
+    "author": "Robert C. Martin",
+    "price": 47.31
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 20",
+    "author": "Joshua Bloch",
+    "price": 27.77
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 20",
+    "author": "Erich Gamma",
+    "price": 91.13
+  },
+  {
+    "title": "Release It! - Edition 20",
+    "author": "Andrew Hunt",
+    "price": 36.5
+  },
+  {
+    "title": "Continuous Delivery - Edition 20",
+    "author": "Steve McConnell",
+    "price": 46.44
+  },
+  {
+    "title": "DevOps Handbook - Edition 20",
+    "author": "Martin Fowler",
+    "price": 31.09
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 20",
+    "author": "Brian W. Kernighan",
+    "price": 27.1
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 20",
+    "author": "Douglas Crockford",
+    "price": 66.84
+  },
+  {
+    "title": "Database Internals - Edition 20",
+    "author": "Kyle Simpson",
+    "price": 47.63
+  },
+  {
+    "title": "SQL Performance Explained - Edition 20",
+    "author": "Marijn Haverbeke",
+    "price": 44.03
+  },
+  {
+    "title": "High Performance MySQL - Edition 20",
+    "author": "Mark Lutz",
+    "price": 53.49
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 20",
+    "author": "Luciano Ramalho",
+    "price": 47.23
+  },
+  {
+    "title": "Redis in Action - Edition 20",
+    "author": "Gayle Laakmann McDowell",
+    "price": 59.77
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 20",
+    "author": "Jon Kleinberg",
+    "price": 72.35
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 20",
+    "author": "Thomas H. Cormen",
+    "price": 38.67
+  },
+  {
+    "title": "Kubernetes in Action - Edition 20",
+    "author": "Harold Abelson",
+    "price": 41.36
+  },
+  {
+    "title": "Docker Deep Dive - Edition 20",
+    "author": "Donald E. Knuth",
+    "price": 73.66
+  },
+  {
+    "title": "Cloud Native Go - Edition 20",
+    "author": "Bjarne Stroustrup",
+    "price": 84.73
+  },
+  {
+    "title": "Building Microservices - Edition 20",
+    "author": "Andrei Alexandrescu",
+    "price": 50.42
+  },
+  {
+    "title": "Domain-Driven Design - Edition 20",
+    "author": "Robert Seacord",
+    "price": 29.83
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 20",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 93.14
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 20",
+    "author": "Len Bass",
+    "price": 85.92
+  },
+  {
+    "title": "System Design Interview - Edition 20",
+    "author": "Michael T. Nygard",
+    "price": 28.76
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 20",
+    "author": "Jez Humble",
+    "price": 52.22
+  },
+  {
+    "title": "Deep Learning - Edition 20",
+    "author": "Gene Kim",
+    "price": 55.08
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 20",
+    "author": "Betsy Beyer",
+    "price": 44.02
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 20",
+    "author": "Martin Kleppmann",
+    "price": 55.51
+  },
+  {
+    "title": "Clean Code - Edition 21",
+    "author": "Alex Petrov",
+    "price": 38.26
+  },
+  {
+    "title": "Effective Java - Edition 21",
+    "author": "Markus Winand",
+    "price": 46.79
+  },
+  {
+    "title": "Design Patterns - Edition 21",
+    "author": "Baron Schwartz",
+    "price": 44.75
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 21",
+    "author": "Kyle Banker",
+    "price": 91.05
+  },
+  {
+    "title": "Code Complete - Edition 21",
+    "author": "Josiah L. Carlson",
+    "price": 51.98
+  },
+  {
+    "title": "Refactoring - Edition 21",
+    "author": "Jason Wilder",
+    "price": 66.66
+  },
+  {
+    "title": "The C Programming Language - Edition 21",
+    "author": "Dominik Petri",
+    "price": 43.71
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 21",
+    "author": "Kelsey Hightower",
+    "price": 79.75
+  },
+  {
+    "title": "You Don't Know JS - Edition 21",
+    "author": "Nigel Poulton",
+    "price": 45.46
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 21",
+    "author": "John Arundel",
+    "price": 27.17
+  },
+  {
+    "title": "Learning Python - Edition 21",
+    "author": "Sam Newman",
+    "price": 78.83
+  },
+  {
+    "title": "Fluent Python - Edition 21",
+    "author": "Eric Evans",
+    "price": 79.2
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 21",
+    "author": "Grady Booch",
+    "price": 54.12
+  },
+  {
+    "title": "Algorithm Design - Edition 21",
+    "author": "Gregor Hohpe",
+    "price": 81.36
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 21",
+    "author": "Bobby Woolf",
+    "price": 53.34
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 21",
+    "author": "Alex Xu",
+    "price": 60.25
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 21",
+    "author": "Andriy Burkov",
+    "price": 92.34
+  },
+  {
+    "title": "A Tour of C++ - Edition 21",
+    "author": "Ian Goodfellow",
+    "price": 62.07
+  },
+  {
+    "title": "Modern C++ Design - Edition 21",
+    "author": "Aurélien Géron",
+    "price": 23.16
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 21",
+    "author": "Alice Zheng",
+    "price": 22.9
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 21",
+    "author": "Robert C. Martin",
+    "price": 51
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 21",
+    "author": "Joshua Bloch",
+    "price": 56.68
+  },
+  {
+    "title": "Release It! - Edition 21",
+    "author": "Erich Gamma",
+    "price": 95.96
+  },
+  {
+    "title": "Continuous Delivery - Edition 21",
+    "author": "Andrew Hunt",
+    "price": 93.25
+  },
+  {
+    "title": "DevOps Handbook - Edition 21",
+    "author": "Steve McConnell",
+    "price": 90.96
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 21",
+    "author": "Martin Fowler",
+    "price": 52.12
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 21",
+    "author": "Brian W. Kernighan",
+    "price": 45.44
+  },
+  {
+    "title": "Database Internals - Edition 21",
+    "author": "Douglas Crockford",
+    "price": 64.43
+  },
+  {
+    "title": "SQL Performance Explained - Edition 21",
+    "author": "Kyle Simpson",
+    "price": 86.57
+  },
+  {
+    "title": "High Performance MySQL - Edition 21",
+    "author": "Marijn Haverbeke",
+    "price": 81.26
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 21",
+    "author": "Mark Lutz",
+    "price": 48.08
+  },
+  {
+    "title": "Redis in Action - Edition 21",
+    "author": "Luciano Ramalho",
+    "price": 89.15
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 21",
+    "author": "Gayle Laakmann McDowell",
+    "price": 52.97
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 21",
+    "author": "Jon Kleinberg",
+    "price": 75.86
+  },
+  {
+    "title": "Kubernetes in Action - Edition 21",
+    "author": "Thomas H. Cormen",
+    "price": 56.04
+  },
+  {
+    "title": "Docker Deep Dive - Edition 21",
+    "author": "Harold Abelson",
+    "price": 49.4
+  },
+  {
+    "title": "Cloud Native Go - Edition 21",
+    "author": "Donald E. Knuth",
+    "price": 87.71
+  },
+  {
+    "title": "Building Microservices - Edition 21",
+    "author": "Bjarne Stroustrup",
+    "price": 33.33
+  },
+  {
+    "title": "Domain-Driven Design - Edition 21",
+    "author": "Andrei Alexandrescu",
+    "price": 90.23
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture - Edition 21",
+    "author": "Robert Seacord",
+    "price": 23.22
+  },
+  {
+    "title": "Enterprise Integration Patterns - Edition 21",
+    "author": "Frederick P. Brooks Jr.",
+    "price": 73.35
+  },
+  {
+    "title": "System Design Interview - Edition 21",
+    "author": "Len Bass",
+    "price": 23.83
+  },
+  {
+    "title": "Machine Learning Design Patterns - Edition 21",
+    "author": "Michael T. Nygard",
+    "price": 43.83
+  },
+  {
+    "title": "Deep Learning - Edition 21",
+    "author": "Jez Humble",
+    "price": 97.81
+  },
+  {
+    "title": "Hands-On Machine Learning - Edition 21",
+    "author": "Gene Kim",
+    "price": 62.54
+  },
+  {
+    "title": "Feature Engineering for Machine Learning - Edition 21",
+    "author": "Betsy Beyer",
+    "price": 81.99
+  },
+  {
+    "title": "Clean Code - Edition 22",
+    "author": "Martin Kleppmann",
+    "price": 25.26
+  },
+  {
+    "title": "Effective Java - Edition 22",
+    "author": "Alex Petrov",
+    "price": 58.68
+  },
+  {
+    "title": "Design Patterns - Edition 22",
+    "author": "Markus Winand",
+    "price": 89.69
+  },
+  {
+    "title": "The Pragmatic Programmer - Edition 22",
+    "author": "Baron Schwartz",
+    "price": 58.09
+  },
+  {
+    "title": "Code Complete - Edition 22",
+    "author": "Kyle Banker",
+    "price": 59.23
+  },
+  {
+    "title": "Refactoring - Edition 22",
+    "author": "Josiah L. Carlson",
+    "price": 69.65
+  },
+  {
+    "title": "The C Programming Language - Edition 22",
+    "author": "Jason Wilder",
+    "price": 91.5
+  },
+  {
+    "title": "JavaScript: The Good Parts - Edition 22",
+    "author": "Dominik Petri",
+    "price": 44.29
+  },
+  {
+    "title": "You Don't Know JS - Edition 22",
+    "author": "Kelsey Hightower",
+    "price": 63.09
+  },
+  {
+    "title": "Eloquent JavaScript - Edition 22",
+    "author": "Nigel Poulton",
+    "price": 97.36
+  },
+  {
+    "title": "Learning Python - Edition 22",
+    "author": "John Arundel",
+    "price": 89.32
+  },
+  {
+    "title": "Fluent Python - Edition 22",
+    "author": "Sam Newman",
+    "price": 40.26
+  },
+  {
+    "title": "Cracking the Coding Interview - Edition 22",
+    "author": "Eric Evans",
+    "price": 65.29
+  },
+  {
+    "title": "Algorithm Design - Edition 22",
+    "author": "Grady Booch",
+    "price": 70.31
+  },
+  {
+    "title": "Introduction to Algorithms - Edition 22",
+    "author": "Gregor Hohpe",
+    "price": 57.05
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs - Edition 22",
+    "author": "Bobby Woolf",
+    "price": 93.05
+  },
+  {
+    "title": "The Art of Computer Programming - Edition 22",
+    "author": "Alex Xu",
+    "price": 38.02
+  },
+  {
+    "title": "A Tour of C++ - Edition 22",
+    "author": "Andriy Burkov",
+    "price": 22.3
+  },
+  {
+    "title": "Modern C++ Design - Edition 22",
+    "author": "Ian Goodfellow",
+    "price": 82.21
+  },
+  {
+    "title": "Secure Coding in C and C++ - Edition 22",
+    "author": "Aurélien Géron",
+    "price": 38.12
+  },
+  {
+    "title": "The Mythical Man-Month - Edition 22",
+    "author": "Alice Zheng",
+    "price": 56.74
+  },
+  {
+    "title": "Software Architecture in Practice - Edition 22",
+    "author": "Robert C. Martin",
+    "price": 26.48
+  },
+  {
+    "title": "Release It! - Edition 22",
+    "author": "Joshua Bloch",
+    "price": 61.71
+  },
+  {
+    "title": "Continuous Delivery - Edition 22",
+    "author": "Erich Gamma",
+    "price": 29.44
+  },
+  {
+    "title": "DevOps Handbook - Edition 22",
+    "author": "Andrew Hunt",
+    "price": 65.57
+  },
+  {
+    "title": "Site Reliability Engineering - Edition 22",
+    "author": "Steve McConnell",
+    "price": 50.25
+  },
+  {
+    "title": "Designing Data-Intensive Applications - Edition 22",
+    "author": "Martin Fowler",
+    "price": 61.5
+  },
+  {
+    "title": "Database Internals - Edition 22",
+    "author": "Brian W. Kernighan",
+    "price": 48.85
+  },
+  {
+    "title": "SQL Performance Explained - Edition 22",
+    "author": "Douglas Crockford",
+    "price": 48.75
+  },
+  {
+    "title": "High Performance MySQL - Edition 22",
+    "author": "Kyle Simpson",
+    "price": 47.8
+  },
+  {
+    "title": "MongoDB: The Definitive Guide - Edition 22",
+    "author": "Marijn Haverbeke",
+    "price": 50.4
+  },
+  {
+    "title": "Redis in Action - Edition 22",
+    "author": "Mark Lutz",
+    "price": 46.37
+  },
+  {
+    "title": "Network Reliability Engineering - Edition 22",
+    "author": "Luciano Ramalho",
+    "price": 38.47
+  },
+  {
+    "title": "BGP Design and Implementation - Edition 22",
+    "author": "Gayle Laakmann McDowell",
+    "price": 79.84
+  },
+  {
+    "title": "Kubernetes in Action - Edition 22",
+    "author": "Jon Kleinberg",
+    "price": 82.65
+  }
+]

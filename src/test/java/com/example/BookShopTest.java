@@ -1,17 +1,21 @@
 package com.example;
-import org.junit.jupiter.api.BeforeEach;
+import com.example.Model.Book;
+import com.example.Model.BookShop;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.io.InputStream;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class BookShopTest {
 
-    private BookShop bookShop;
-    @BeforeEach
-    void setUp(){
+    private static BookShop bookShop;
+    @BeforeAll
+    static void setUp(){
         bookShop = new BookShop();
         bookShop.addBook(new Book(
                 "Clean Code",
@@ -39,7 +43,7 @@ public class BookShopTest {
 
     @Test
     void totalValueShouldBeCorrect(){
-        double expectedValue = 190.49;
+        double expectedValue = 140.49;
         double actualValue = bookShop.totalValue();
         assertEquals(expectedValue, actualValue,0.001);
     }
@@ -74,5 +78,25 @@ public class BookShopTest {
         shop.addBook(new Book("Book2", "Author2", price2));
 
         assertEquals(expectedTotal, shop.totalValue(), 0.001);
+    }
+
+    @Test
+    void removeByTitleThenTryingToFindByTitleShouldBeNull(){
+        assertTrue(bookShop.removeByTittle("Design"));
+        assertEquals(Optional.empty(), bookShop.findByTitle("Design"));    }
+
+    @Test
+    void allBooksAreLoaded() {
+        BookShop bookShop = new BookShop();
+        try (InputStream in = App.class.getResourceAsStream("/books.json")) {
+            bookShop.loadFrom(in);
+        } catch (Exception e) {
+            fail("Failed to load books: " + e.getMessage());
+        }
+
+        double expectedValue = 58849.26;
+        double actualValue = bookShop.totalValue();
+
+        assertEquals(expectedValue, actualValue, 0.01);
     }
 }

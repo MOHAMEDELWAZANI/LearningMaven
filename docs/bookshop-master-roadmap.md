@@ -177,6 +177,8 @@ Your file is filtered and copied — but no code reads it. Fix that:
 ```java
 package com.example;
 
+import com.example.Model.BookShop;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -185,10 +187,10 @@ public class App {
     public static void main(String[] args) throws IOException {
         Properties config = new Properties();
         try (InputStream in =
-                 App.class.getResourceAsStream("/shop.properties")) {
+                     App.class.getResourceAsStream("/shop.properties")) {
             if (in == null) {
                 throw new IllegalStateException(
-                    "shop.properties not found on classpath");
+                        "shop.properties not found on classpath");
             }
             config.load(in);
         }
@@ -309,7 +311,7 @@ App
  └── BookShop (business logic — knows NOTHING about SQL)
       └── BookDAO (interface — "a place books live")
             ├── InMemoryBookDAO   (a List — what you have today)
-            └── JdbcBookDAO       (real database)
+            └── JdbcBookDAO       (real Oracle database)
                   └── ConnectionFactory  (opens connections)
                         └── DatabaseConfig (reads database.properties)
 ```
@@ -319,7 +321,7 @@ App
 * **DAO (Data Access Object)** — an *interface* that describes storage
   operations (`save`, `findByTitle`, `findAll`, `deleteByTitle`) without
   saying *how* they happen. Your `BookShop` depends only on this interface.
-  Result: you can swap MySQL for in-memory (fast tests! Phase 5) without
+  Result: you can swap Oracle for in-memory (fast tests! Phase 5) without
   touching business logic. This is the single most transferable pattern in
   this whole guide — Spring's repositories, which you'll meet in your real
   project, are DAOs with superpowers.
@@ -332,16 +334,38 @@ App
 ## 3.1 The driver dependency — and your first *scope* decision
 
 A **JDBC driver** is a jar that translates Java's standard `Connection` /
-`PreparedStatement` calls into one database's network protocol. MySQL's:
+`PreparedStatement` calls into one database's network protocol. A driver is
+**database-specific**: an Oracle URL needs the Oracle driver, and no other.
+Oracle's is called *OJDBC*:
 
 ```xml
+<properties>
+    <ojdbc.version>23.6.0.24.10</ojdbc.version>
+</properties>
+
 <dependency>
-    <groupId>com.mysql</groupId>
-    <artifactId>mysql-connector-j</artifactId>
-    <version>8.4.0</version>
+    <groupId>com.oracle.database.jdbc</groupId>
+    <artifactId>ojdbc11</artifactId>
+    <version>${ojdbc.version}</version>
     <scope>runtime</scope>
 </dependency>
 ```
+
+**Reading the artifact name.** `ojdbc11` is not a version number — the
+trailing digit is the **minimum Java version** the jar is compiled for:
+`ojdbc11` needs Java 11+, `ojdbc8` needs Java 8. You are on Java 17
+(`maven.compiler.release`), so `ojdbc11` is your choice. The `<version>`
+(`23.6.0.24.10`) is the *database* release the driver ships with — and
+Oracle drivers are backward/forward compatible across a wide range, so a
+23.x driver talks happily to a 19c or 21c server. Pick the newest.
+
+> **Trap — the wrong driver is silent until runtime.** If your pom declares
+> `com.mysql:mysql-connector-j` but your URL starts with `jdbc:oracle:thin:`,
+> **everything compiles fine**. You only find out when you run, and the
+> message is the notoriously unhelpful
+> `java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@...`.
+> That error almost never means "bad password" — it means *no driver on the
+> classpath recognised this URL prefix*. Check your dependency first.
 
 **Why `<scope>runtime</scope>`?** Walk through what scope means with the
 three dependencies your pom now has:
@@ -350,14 +374,21 @@ three dependencies your pom now has:
 |---|---|---|---|---|
 | gson | compile (default) | yes | yes | yes |
 | junit-jupiter | test | no | yes | no |
-| mysql-connector-j | runtime | **no** | yes | yes |
+| ojdbc11 | runtime | **no** | yes | yes |
 
-Your *code* never mentions a MySQL class — you write against
+Your *code* never mentions an Oracle class — you write against
 `java.sql.Connection`, an interface from the JDK. The driver is only needed
 when the program *runs*. Declaring it `runtime` makes the compiler **stop
-you** if you accidentally import `com.mysql.*` — protecting the swappability
-the DAO pattern just bought you. **Rule: drivers, logging backends, anything
-you use only through an interface → `runtime`.**
+you** if you accidentally import `oracle.jdbc.*` — protecting the
+swappability the DAO pattern just bought you. **Rule: drivers, logging
+backends, anything you use only through an interface → `runtime`.**
+
+*How does the driver get found, then, if you never name it?* Since JDBC 4.0,
+`DriverManager` scans the classpath for jars carrying a
+`META-INF/services/java.sql.Driver` file and registers what it finds. OJDBC
+ships one. This is why the old `Class.forName("oracle.jdbc.OracleDriver")`
+line you'll see in every tutorial from 2009 is **obsolete** — delete it on
+sight.
 
 Run `mvn dependency:tree` after adding it and find the driver in the output.
 
@@ -366,39 +397,188 @@ Run `mvn dependency:tree` after adding it and find the driver in the output.
 `src/main/resources/schema.sql`:
 
 ```sql
-CREATE TABLE IF NOT EXISTS books (
-    id     INT AUTO_INCREMENT PRIMARY KEY,
-    title  VARCHAR(200) NOT NULL,
-    author VARCHAR(120) NOT NULL,
-    price  DECIMAL(8,2) NOT NULL
+CREATE TABLE books (
+    id     NUMBER GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+    title  VARCHAR2(200) NOT NULL,
+    author VARCHAR2(120) NOT NULL,
+    price  NUMBER(8,2)   NOT NULL
 );
 ```
 
-Notes for a first schema: `AUTO_INCREMENT PRIMARY KEY` gives every row a
-unique id you didn't have to invent; `DECIMAL(8,2)` — not `DOUBLE` — for
-money, because binary doubles cannot represent 0.10 exactly (your JUnit
-delta `0.001` was already a hint of this!); `NOT NULL` makes the database
-enforce what your constructor already assumes.
+Four Oracle-specific things in those five lines — none of them optional:
 
-Set up the database once (install MySQL or MariaDB with your package
-manager first):
+* **`VARCHAR2`, not `VARCHAR`.** Oracle accepts `VARCHAR` today but has
+  reserved the right to change its meaning for thirty years. Every Oracle
+  codebase writes `VARCHAR2`. Do the same.
+* **`NUMBER(8,2)` for money** — Oracle's exact-decimal type (the equivalent
+  of `DECIMAL` elsewhere). Never `BINARY_DOUBLE` for prices: binary floats
+  cannot represent `0.10` exactly, which is precisely why your JUnit
+  assertions needed a `0.001` delta. A database column should not need a
+  delta.
+* **`GENERATED BY DEFAULT AS IDENTITY`** replaces MySQL's `AUTO_INCREMENT`.
+  Identity columns arrived in Oracle 12c; before that, every project hand-
+  rolled a `SEQUENCE` plus a `BEFORE INSERT` trigger. If you inherit an
+  older Oracle schema you *will* meet that pattern — now you'll recognise
+  what it's emulating.
+* **No `IF NOT EXISTS`** in Oracle before 23ai. Re-running this script on an
+  existing table raises `ORA-00955: name is already used by an existing
+  object`. On Oracle 23ai (Free) you *can* write
+  `CREATE TABLE IF NOT EXISTS books (...)`; on 19c/21c the idiom is to drop
+  first and ignore the error, or wrap the DDL in a PL/SQL block. Know which
+  version you're targeting.
+
+**A word on `id`.** Your `Book` class has no `id` field, and this guide does
+not add one — the DAO looks books up by title. The identity column still
+earns its place: it gives every row a stable primary key so the table has a
+real identity of its own, independent of a title someone may want to edit
+later.
+
+### Running Oracle locally
+
+Installing an Oracle server by hand is a genuinely unpleasant afternoon.
+Don't. Oracle publishes **Oracle Database Free** (formerly XE) as a
+container image, and `gvenzl/oracle-free` wraps it with the convenience
+options you want:
 
 ```bash
-sudo mysql
-CREATE DATABASE bookshop;
-CREATE USER 'shopuser'@'localhost' IDENTIFIED BY 'shoppass';
-GRANT ALL PRIVILEGES ON bookshop.* TO 'shopuser'@'localhost';
+docker run -d --name oracle-free -p 1521:1521 \
+    -e ORACLE_PASSWORD=oracle \
+    -e APP_USER=shopuser \
+    -e APP_USER_PASSWORD=shoppass \
+    gvenzl/oracle-free:23-slim
 ```
+
+`APP_USER` / `APP_USER_PASSWORD` create your `shopuser` account
+automatically, already granted what an application needs. **Be patient on
+the first run:** an Oracle container takes 30–90 seconds to become usable
+while it initialises the database — much slower than MySQL or Postgres.
+Watch for the ready line:
+
+```bash
+docker logs -f oracle-free       # wait for "DATABASE IS READY TO USE!"
+```
+
+Then create the table by opening a SQL shell inside the container:
+
+```bash
+docker exec -it oracle-free sqlplus shopuser/shoppass@localhost/FREEPDB1
+```
+
+Paste the `CREATE TABLE` above (SQL\*Plus executes when it sees the `;`),
+then `SELECT * FROM books;` to confirm it exists, and `exit`.
+
+> **Schema ≠ database.** In MySQL you would `CREATE DATABASE bookshop`. In
+> Oracle there is *one* database, and each **user owns a schema** — the
+> namespace holding their tables. Creating the user `shopuser` *is* creating
+> the schema; `shopuser`'s tables are simply `SHOPUSER.BOOKS`. This
+> difference matters again in Phase 4, where "a separate test database"
+> becomes "a separate test user."
 
 ## 3.3 Config: `database.properties` + `DatabaseConfig`
 
 `src/main/resources/database.properties`:
 
 ```properties
-db.url=jdbc:mysql://localhost:3306/bookshop
+db.url=jdbc:oracle:thin:@//localhost:1521/FREEPDB1
 db.user=shopuser
 db.password=shoppass
 ```
+
+### Decoding that URL — the #1 Oracle beginner trap
+
+Oracle's JDBC URL is stranger than MySQL's, and it comes in **two forms
+that look nearly identical but mean different things**:
+
+```
+Service-name form — use this one:
+
+      jdbc:oracle:thin:@//localhost:1521/FREEPDB1
+                       └┬┘└───┬───┘ └─┬┘ └───┬──┘
+                        │     │       │      └─ service name
+                        │     │       └─ listener port (default 1521)
+                        │     └─ host
+                        └─ "@//" introduces the service form
+
+Legacy SID form:
+
+      jdbc:oracle:thin:@localhost:1521:FREE
+                       │              └─ ":" separator means this is a SID
+                       └─ "@" alone introduces the SID form
+```
+
+Piece by piece:
+
+* **`thin`** — the pure-Java driver, no native Oracle client needed. There
+  is also an `oci` driver that requires an Oracle client installed on the
+  machine. You want `thin`, always, for a Java app.
+* **`@//host:port/SERVICE`** — the modern **service name** form. Note the
+  double slash and the **`/`** before the service.
+* **`@host:port:SID`** — the legacy **SID** form, with a **`:`**. A SID
+  names one database *instance*; a service name is a logical alias that can
+  point at several. Oracle has recommended service names since 8i.
+
+For the container above, the values are: SID `FREE`, and two service names
+— `FREE` (the container/CDB) and **`FREEPDB1`** (the pluggable database
+where `shopuser`'s tables actually live). **Use `FREEPDB1`.** Connecting to
+`FREE` succeeds and then reports that your table doesn't exist, which is a
+maddening thing to debug. Modern Oracle is *multitenant*: the CDB is a
+shell, your data lives in a PDB.
+
+Two failures worth recognising immediately:
+
+| Symptom | Cause |
+|---|---|
+| `ORA-12514: TNS:listener does not currently know of service requested` | wrong service name (e.g. `FREEPDB1` misspelled, or you used the SID form with a service name) |
+| `ORA-12541: TNS:no listener` | nothing is listening on that host/port — container not started, still initialising, or wrong port |
+| `ORA-00942: table or view does not exist` right after a *successful* connect | you connected to the CDB (`FREE`) instead of the PDB (`FREEPDB1`), or to the wrong user's schema |
+
+### Exercise 3.3b — prove the connection works *before* writing a DAO
+
+Do not debug a driver, a URL, a password, and your SQL all at once. Isolate.
+Add a throwaway class and run it:
+
+```java
+package com.example.db;
+
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+
+public class ConnectionCheck {
+    public static void main(String[] args) throws Exception {
+        DatabaseConfig config = new DatabaseConfig();
+        System.out.println("URL  = " + config.url());
+        System.out.println("USER = " + config.user());
+
+        try (Connection con = new ConnectionFactory(config).open()) {
+            DatabaseMetaData md = con.getMetaData();
+            System.out.println("Connected to : " + md.getDatabaseProductName()
+                    + " " + md.getDatabaseProductVersion());
+            System.out.println("Driver       : " + md.getDriverVersion());
+            System.out.println("Valid        : " + con.isValid(5));
+        }
+    }
+}
+```
+
+```bash
+mvn compile exec:java -Dexec.mainClass=com.example.db.ConnectionCheck
+```
+
+Printing the URL first is not padding — it is the fastest way to catch a
+filtering mistake, because a placeholder that never resolved shows up
+literally as `URL = ${db.url}` instead of failing with a confusing driver
+error. When this class prints an Oracle version string, *then* move on. If
+it doesn't, the table above names your error.
+
+An even smaller check, no Java at all — does anything answer on the port?
+
+```bash
+docker ps                       # is the container up?
+nc -zv localhost 1521           # is the listener accepting connections?
+```
+
+Delete `ConnectionCheck` once the DAO works, or keep it — a one-command
+connectivity probe is a genuinely useful thing to have in a project.
 
 `DatabaseConfig.java` — Phase 2 code, new file:
 
@@ -468,16 +648,23 @@ seam — a place designed for future change.
 ```java
 package com.example;
 
+import com.example.Model.Book;
+
 import java.util.List;
 import java.util.Optional;
 
 public interface BookDAO {
-    void save(Book book);                       // C
-    List<Book> findAll();                       // R
-    Optional<Book> findByTitle(String title);   // R
-    List<Book> findByAuthor(String author);     // R
-    boolean updatePrice(String title, double newPrice); // U
-    boolean deleteByTitle(String title);        // D
+  void save(Book book);                       // C
+
+  List<Book> findAll();                       // R
+
+  Optional<Book> findByTitle(String title);   // R
+
+  List<Book> findByAuthor(String author);     // R
+
+  boolean updatePrice(String title, double newPrice); // U
+
+  boolean deleteByTitle(String title);        // D
 }
 ```
 
@@ -490,63 +677,63 @@ pattern repeats, so write the others yourself:
 ```java
 package com.example.db;
 
-import com.example.Book;
+import com.example.Model.Book;
 import com.example.BookDAO;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class JdbcBookDAO implements BookDAO {
-    private final ConnectionFactory factory;
+  private final ConnectionFactory factory;
 
-    public JdbcBookDAO(ConnectionFactory factory) {
-        this.factory = factory;
-    }
+  public JdbcBookDAO(ConnectionFactory factory) {
+    this.factory = factory;
+  }
 
-    @Override
-    public void save(Book book) {
-        String sql = "INSERT INTO books (title, author, price) VALUES (?, ?, ?)";
-        try (Connection con = factory.open();
-             PreparedStatement ps = con.prepareStatement(sql)) {
-            ps.setString(1, book.getTitle());
-            ps.setString(2, book.getAuthor());
-            ps.setDouble(3, book.getPrice());
-            ps.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException("save failed for " + book.getTitle(), e);
-        }
+  @Override
+  public void save(Book book) {
+    String sql = "INSERT INTO books (title, author, price) VALUES (?, ?, ?)";
+    try (Connection con = factory.open();
+         PreparedStatement ps = con.prepareStatement(sql)) {
+      ps.setString(1, book.getTitle());
+      ps.setString(2, book.getAuthor());
+      ps.setDouble(3, book.getPrice());
+      ps.executeUpdate();
+    } catch (SQLException e) {
+      throw new RuntimeException("save failed for " + book.getTitle(), e);
     }
+  }
 
-    @Override
-    public List<Book> findAll() {
-        String sql = "SELECT title, author, price FROM books";
-        List<Book> result = new ArrayList<>();
-        try (Connection con = factory.open();
-             PreparedStatement ps = con.prepareStatement(sql);
-             ResultSet rs = ps.executeQuery()) {
-            while (rs.next()) {
-                result.add(new Book(rs.getString("title"),
-                                    rs.getString("author"),
-                                    rs.getDouble("price")));
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException("findAll failed", e);
-        }
-        return result;
+  @Override
+  public List<Book> findAll() {
+    String sql = "SELECT title, author, price FROM books";
+    List<Book> result = new ArrayList<>();
+    try (Connection con = factory.open();
+         PreparedStatement ps = con.prepareStatement(sql);
+         ResultSet rs = ps.executeQuery()) {
+      while (rs.next()) {
+        result.add(new Book(rs.getString("title"),
+                rs.getString("author"),
+                rs.getDouble("price")));
+      }
+    } catch (SQLException e) {
+      throw new RuntimeException("findAll failed", e);
     }
+    return result;
+  }
 
-    @Override
-    public boolean deleteByTitle(String title) {
-        String sql = "DELETE FROM books WHERE title = ?";
-        try (Connection con = factory.open();
-             PreparedStatement ps = con.prepareStatement(sql)) {
-            ps.setString(1, title);
-            return ps.executeUpdate() > 0;
-        } catch (SQLException e) {
-            throw new RuntimeException("delete failed for " + title, e);
-        }
+  @Override
+  public boolean deleteByTitle(String title) {
+    String sql = "DELETE FROM books WHERE title = ?";
+    try (Connection con = factory.open();
+         PreparedStatement ps = con.prepareStatement(sql)) {
+      ps.setString(1, title);
+      return ps.executeUpdate() > 0;
+    } catch (SQLException e) {
+      throw new RuntimeException("delete failed for " + title, e);
     }
+  }
 }
 ```
 
@@ -559,9 +746,12 @@ Concepts inside that code — each one is a habit, not a detail:
   `?` mechanism sends values separately from the SQL, making injection
   impossible.
 * **try-with-resources on `Connection`, `PreparedStatement`, `ResultSet`.**
-  Database connections are scarce (a MySQL server allows ~150 by default).
-  Leak them and your app freezes under load. Same `try (...)` you learned
-  in Phase 2 — this is why it exists.
+  Database connections are scarce, and on Oracle they are *expensive*: each
+  session costs real server memory, and the instance enforces a hard
+  `sessions` limit (Oracle Free ships with a low one). Leak connections and
+  you eventually get `ORA-00018: maximum number of sessions exceeded` —
+  which looks like a server problem and is always a client bug. Same
+  `try (...)` you learned in Phase 2; this is why it exists.
 * **`executeUpdate()` returns the affected-row count** — that's how
   `deleteByTitle` knows whether the book existed. `executeQuery()` returns
   a `ResultSet` you walk with `rs.next()`.
@@ -612,7 +802,7 @@ which implementation runs:
 DatabaseConfig config = new DatabaseConfig();
 ConnectionFactory factory = new ConnectionFactory(config);
 BookDAO dao = new JdbcBookDAO(factory);      // ← the ONLY line that
-BookShop bookShop = new BookShop(dao);       //   knows MySQL is involved
+BookShop bookShop = new BookShop(dao);       //   knows Oracle is involved
 ```
 
 Swap that one line to `new InMemoryBookDAO()` and the whole app runs
@@ -620,12 +810,19 @@ without a database. That flexibility is what Phases 4 and 5 will exploit.
 
 **Checkpoint 3**
 
-- [ ] `mvn exec:java` inserts books and prints them back **from MySQL**
+- [ ] `ConnectionCheck` prints a real Oracle version string.
+- [ ] `mvn exec:java` inserts books and prints them back **from Oracle**
       (run it twice — books persist between runs now; you may want an
       `if empty then seed` guard).
-- [ ] `sudo mysql -e "SELECT * FROM bookshop.books"` shows your rows.
+- [ ] This shows your rows:
+
+      ```bash
+      docker exec -i oracle-free sqlplus -S shopuser/shoppass@localhost/FREEPDB1 <<< "SELECT * FROM books;"
+      ```
+
 - [ ] You can explain: why the driver is `runtime` scope, why `?`
-      placeholders, why the DAO is an interface.
+      placeholders, why the DAO is an interface, and the difference between
+      a SID and a service name.
 - [ ] `git commit` — this was a big phase.
 
 ---
@@ -663,7 +860,7 @@ Defaults in the main `<properties>` (remember Bug 0.1 — defaults always):
 ```xml
 <properties>
     ...
-    <db.url>jdbc:mysql://localhost:3306/bookshop</db.url>
+    <db.url>jdbc:oracle:thin:@//localhost:1521/FREEPDB1</db.url>
     <db.user>shopuser</db.user>
     <db.password>shoppass</db.password>
 </properties>
@@ -687,7 +884,9 @@ And three profiles:
         <id>test</id>
         <properties>
             <shop.name>Bookshop TEST</shop.name>
-            <db.url>jdbc:mysql://localhost:3306/bookshop_test</db.url>
+            <!-- same URL — a different SCHEMA, not a different database -->
+            <db.user>shoptest</db.user>
+            <db.password>shoppass</db.password>
         </properties>
     </profile>
 
@@ -695,7 +894,7 @@ And three profiles:
         <id>prod</id>
         <properties>
             <shop.name>The Bookshop</shop.name>
-            <db.url>jdbc:mysql://prod-server:3306/bookshop</db.url>
+            <db.url>jdbc:oracle:thin:@//prod-server:1521/BOOKPDB</db.url>
             <db.user>prod_user</db.user>
             <!-- no password here! see 4.3 -->
         </properties>
@@ -703,19 +902,37 @@ And three profiles:
 </profiles>
 ```
 
-Create the test database too, so `-Ptest` actually works:
+**Notice what changed between `dev` and `test`: the *user*, not the URL.**
+This is the schema-vs-database distinction from Phase 3 showing up in your
+build config. On MySQL you would point at `bookshop_test`; on Oracle you
+connect to the same PDB as a different user, and get that user's schema.
+Same isolation, different mechanism — and a thing interviewers ask about.
+
+Create the test user so `-Ptest` actually works. Connect as the admin
+account (`system`, password `oracle` from your `docker run`):
 
 ```bash
-sudo mysql -e "CREATE DATABASE bookshop_test;
-GRANT ALL PRIVILEGES ON bookshop_test.* TO 'shopuser'@'localhost';"
+docker exec -it oracle-free sqlplus system/oracle@localhost/FREEPDB1
 ```
+
+```sql
+CREATE USER shoptest IDENTIFIED BY shoppass;
+GRANT CONNECT, RESOURCE TO shoptest;
+ALTER USER shoptest QUOTA UNLIMITED ON USERS;
+```
+
+Then reconnect as `shoptest` and run your `CREATE TABLE books` again — the
+new schema starts empty. (`CONNECT` allows logging in, `RESOURCE` allows
+creating tables, and the `QUOTA` grant is the one people forget: without it
+the user may create a table but every `INSERT` fails with `ORA-01950: no
+privileges on tablespace 'USERS'`.)
 
 ## Exercise 4.2 — see it work, three ways
 
 ```bash
 mvn help:active-profiles              # which profiles are on right now?
 mvn clean process-resources -Ptest
-cat target/classes/database.properties   # → bookshop_test URL
+cat target/classes/database.properties   # → db.user=shoptest
 
 mvn clean process-resources -Pprod
 cat target/classes/database.properties   # → prod-server URL
@@ -766,9 +983,10 @@ Try option 2 right now so it's not abstract: set
 
 Everything you've written so far is a **unit test**: fast, isolated, no
 network, no database — pure Java in, assertion out. A test that talks to a
-real MySQL is an **integration test**: slower, needs infrastructure, can
-fail for reasons that aren't bugs (DB down, wrong password). Mixing the two
-in one bucket ruins both — so Maven ships two test plugins:
+real Oracle instance is an **integration test**: slower, needs
+infrastructure, can fail for reasons that aren't bugs (container not
+started, wrong service name, expired password). Mixing the two in one bucket
+ruins both — so Maven ships two test plugins:
 
 | | Surefire | Failsafe |
 |---|---|---|
@@ -783,7 +1001,7 @@ still tear down containers/servers; the failure is reported in `verify`.
 
 ## Exercise 5.1 — your DAO makes unit testing easy (this is the payoff)
 
-`BookShopTest` should no longer touch MySQL — inject the in-memory DAO:
+`BookShopTest` should no longer touch Oracle — inject the in-memory DAO:
 
 ```java
 @BeforeEach
@@ -805,41 +1023,43 @@ Same assertions as before, still milliseconds-fast, zero infrastructure.
 ```java
 package com.example.db;
 
-import com.example.Book;
+import com.example.Model.Book;
 import org.junit.jupiter.api.*;
+
 import java.sql.Connection;
 import java.sql.SQLException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @Tag("integration")
 class JdbcBookDAOIT {
 
-    private ConnectionFactory factory;
-    private JdbcBookDAO dao;
+  private ConnectionFactory factory;
+  private JdbcBookDAO dao;
 
-    @BeforeEach
-    void setUp() throws SQLException {
-        factory = new ConnectionFactory(new DatabaseConfig());
-        dao = new JdbcBookDAO(factory);
-        try (Connection con = factory.open()) {
-            con.createStatement().execute("DELETE FROM books");
-        }
+  @BeforeEach
+  void setUp() throws SQLException {
+    factory = new ConnectionFactory(new DatabaseConfig());
+    dao = new JdbcBookDAO(factory);
+    try (Connection con = factory.open()) {
+      con.createStatement().execute("DELETE FROM books");
     }
+  }
 
-    @Test
-    void savedBookCanBeFoundAgain() {
-        dao.save(new Book("Refactoring", "Martin Fowler", 47.00));
+  @Test
+  void savedBookCanBeFoundAgain() {
+    dao.save(new Book("Refactoring", "Martin Fowler", 47.00));
 
-        var found = dao.findByTitle("Refactoring");
+    var found = dao.findByTitle("Refactoring");
 
-        assertTrue(found.isPresent());
-        assertEquals("Martin Fowler", found.get().getAuthor());
-    }
+    assertTrue(found.isPresent());
+    assertEquals("Martin Fowler", found.get().getAuthor());
+  }
 
-    @Test
-    void deleteReturnsFalseWhenBookAbsent() {
-        assertFalse(dao.deleteByTitle("Ghost Book"));
-    }
+  @Test
+  void deleteReturnsFalseWhenBookAbsent() {
+    assertFalse(dao.deleteByTitle("Ghost Book"));
+  }
 }
 ```
 
@@ -851,8 +1071,15 @@ New ideas in there:
   slice suites: `slow`, `smoke`, `requires-network`.
 * **Cleaning the table in `@BeforeEach`** — integration tests must not
   depend on leftover state from a previous run or from each other. Every
-  test starts from a known world. (This is also why they run against
-  `bookshop_test`, never the real DB — wire your `test` profile in.)
+  test starts from a known world. (This is also why they run as `shoptest`,
+  never against your real schema — wire your `test` profile in.)
+* **Oracle does not auto-commit `DELETE`… or does it?** JDBC opens
+  connections in auto-commit mode, so the cleanup above commits and you can
+  ignore transactions for now. The moment you turn auto-commit off — which
+  real applications do — remember that Oracle *never* implicitly commits
+  DML, and an uncommitted `DELETE` will block another session's write until
+  you commit or roll back. That is the most common "my integration test
+  hangs forever" cause on Oracle.
 * **Test naming as documentation** — `deleteReturnsFalseWhenBookAbsent`
   tells you the contract without opening `JdbcBookDAO`.
 
@@ -879,13 +1106,16 @@ that: `mvn test` should not run it. Then add Failsafe:
 Now observe the split in action:
 
 ```bash
-mvn test      # unit tests only — works with MySQL stopped!
+mvn test      # unit tests only — works with Oracle stopped!
 mvn verify    # unit tests, THEN package, THEN integration tests
 ```
 
-Try it with MySQL stopped (`sudo systemctl stop mysql`): `mvn test` stays
-green, `mvn verify` fails — exactly the separation you want. A teammate
-without MySQL can still build; CI runs the full `verify`.
+Try it with Oracle stopped (`docker stop oracle-free`): `mvn test` stays
+green, `mvn verify` fails with `ORA-12541: TNS:no listener` — exactly the
+separation you want. A teammate without an Oracle container can still
+build; CI runs the full `verify`. Start it again with
+`docker start oracle-free` (much faster than the first run — the database
+is already initialised).
 
 **Checkpoint 5**
 
@@ -1037,7 +1267,7 @@ one. **Why teams do it:** enforced boundaries — code in `core` physically
 *cannot* call JDBC if the JDBC dependency only exists in the `database`
 module; the compiler enforces your architecture. Also: shared version/
 dependency management in one place, and reusable pieces (another team can
-depend on `bookshop-core` without dragging MySQL along).
+depend on `bookshop-core` without dragging the 10 MB Oracle driver along).
 
 **Honest counterpoint:** for a program this size, a single module is
 objectively fine. You are doing this to *learn the mechanics* — which is a
@@ -1097,7 +1327,7 @@ architectural lesson of the whole phase.
         <maven.compiler.release>17</maven.compiler.release>
         <junit.version>5.11.0</junit.version>
         <gson.version>2.11.0</gson.version>
-        <mysql.version>8.4.0</mysql.version>
+        <ojdbc.version>23.6.0.24.10</ojdbc.version>
     </properties>
 
     <dependencyManagement>
@@ -1115,9 +1345,9 @@ architectural lesson of the whole phase.
                 <version>${gson.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.mysql</groupId>
-                <artifactId>mysql-connector-j</artifactId>
-                <version>${mysql.version}</version>
+                <groupId>com.oracle.database.jdbc</groupId>
+                <artifactId>ojdbc11</artifactId>
+                <version>${ojdbc.version}</version>
             </dependency>
             <!-- modules can depend on each other version-free too -->
             <dependency>
@@ -1188,8 +1418,8 @@ belonged** — this is what `dependencyManagement` was *for*. The pattern:
     <artifactId>bookshop-core</artifactId>   <!-- inter-module dependency -->
 </dependency>
 <dependency>
-    <groupId>com.mysql</groupId>
-    <artifactId>mysql-connector-j</artifactId>
+    <groupId>com.oracle.database.jdbc</groupId>
+    <artifactId>ojdbc11</artifactId>
     <scope>runtime</scope>
 </dependency>
 ```
@@ -1267,8 +1497,14 @@ generators include it automatically. Now you know what that file is.)
 mvn dependency:tree
 ```
 
-Read the tree: gson and mysql are *direct*; things indented under them are
-*transitive* — dependencies of your dependencies, resolved automatically.
+Read the tree: gson and ojdbc11 are *direct*; things indented under them
+are *transitive* — dependencies of your dependencies, resolved
+automatically. Oracle's driver is a good specimen to read: depending on the
+artifact you pick it can pull in `oraclepki`, `osdt_core`, `osdt_cert` (the
+wallet/TLS support) and more. If you never use Oracle Wallet you are
+shipping megabytes for nothing — which is exactly what `dependency:analyze`
+and exclusions, below, are for.
+
 Two related tools:
 
 * **Conflicts.** When two paths bring different versions of one library,
@@ -1371,17 +1607,16 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-      mysql:
-        image: mysql:8.4
+      oracle:
+        image: gvenzl/oracle-free:23-slim
         env:
-          MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: bookshop_test
-          MYSQL_USER: shopuser
-          MYSQL_PASSWORD: shoppass
-        ports: ["3306:3306"]
+          ORACLE_PASSWORD: oracle
+          APP_USER: shoptest
+          APP_USER_PASSWORD: shoppass
+        ports: ["1521:1521"]
         options: >-
-          --health-cmd="mysqladmin ping -h localhost"
-          --health-interval=10s --health-retries=10
+          --health-cmd="healthcheck.sh"
+          --health-interval=20s --health-timeout=10s --health-retries=20
 
     steps:
       - uses: actions/checkout@v4
@@ -1390,15 +1625,38 @@ jobs:
           distribution: temurin
           java-version: '17'
           cache: maven
+      - name: Create schema
+        run: |
+          docker exec -i "$(docker ps -qf ancestor=gvenzl/oracle-free:23-slim)" \
+            sqlplus -S shoptest/shoppass@localhost/FREEPDB1 \
+            < src/main/resources/schema.sql
       - name: Build & run all tests
         run: ./mvnw -B clean verify -Ptest
 ```
 
 Read the file top to bottom and connect each line to something you built:
-the MySQL **service container** exists because your Failsafe tests need a
-database; the `-Ptest` profile points them at `bookshop_test`; `verify`
-runs the *whole* quality gate; `cache: maven` is `~/.m2` persisted between
-runs; `-B` (batch mode) silences the download progress spam in logs.
+the Oracle **service container** exists because your Failsafe tests need a
+database; `APP_USER` recreates the `shoptest` schema you made by hand in
+Phase 4; the `-Ptest` profile points the build at that user; `verify` runs
+the *whole* quality gate; `cache: maven` is `~/.m2` persisted between runs;
+`-B` (batch mode) silences the download progress spam in logs.
+
+Three Oracle-in-CI realities worth knowing before they cost you an evening:
+
+* **The image is big and slow.** Expect a couple of minutes before the
+  database is usable — hence `--health-retries=20` with a 20-second
+  interval rather than the snappier values a MySQL service gets. Too few
+  retries and your job fails with `ORA-12541` on a database that was merely
+  still booting.
+* **The schema must be created explicitly.** MySQL's `MYSQL_DATABASE` gives
+  you a ready database; on Oracle the user exists but the `books` table
+  does not, so CI runs `schema.sql` itself. Good discipline anyway — your
+  schema is now version-controlled and applied identically everywhere.
+* **Licensing.** Oracle Database Free is genuinely free to use and
+  redistribute, which is why this workflow is legal. Full Oracle Database
+  images are not — do not casually swap the image for `enterprise` in a
+  company repo.
+
 When the green check appears on your commit — that's CI, working.
 
 **Checkpoint 9**
@@ -1426,7 +1684,7 @@ codebase. When you open your real project, this is the translation table:
 | Maven `-P` profiles + filtering | Spring runtime profiles (`application-prod.properties`) |
 | Shade fat jar | `spring-boot-maven-plugin` repackaged jar |
 | Parent pom + BOM | `spring-boot-starter-parent` / `spring-boot-dependencies` |
-| `*IT` + Failsafe + MySQL service | `@SpringBootTest` + Testcontainers |
+| `*IT` + Failsafe + Oracle service | `@SpringBootTest` + Testcontainers (`OracleContainer`) |
 | GitHub Actions `verify` | the same, verbatim |
 
 You will recognize *all* of it — because you've now felt the problem each
@@ -1437,9 +1695,10 @@ piece solves. That was the point of building it the hard way first.
 - [ ] Bugs 0.1 and 0.2 fixed; project in git.
 - [ ] Full CRUD with `Optional` finders, all unit-tested.
 - [ ] Config and seed data load from the classpath.
-- [ ] JDBC DAO with PreparedStatements and try-with-resources; MySQL
+- [ ] JDBC DAO with PreparedStatements and try-with-resources; Oracle
       persists your books.
-- [ ] dev / test / prod profiles; no secret in any committed file.
+- [ ] dev / test / prod profiles pointing at separate Oracle *schemas*; no
+      secret in any committed file.
 - [ ] `mvn test` = fast and DB-free; `mvn verify` = the full gate.
 - [ ] One fat jar runs the whole app.
 - [ ] Three modules, reactor-ordered, versions only in the parent.
@@ -1470,3 +1729,23 @@ skill. Go start the real project.
 | `mvn wrapper:wrapper -Dmaven=3.9.9` | add the Maven wrapper |
 | `jar tf target/app.jar` | list what's inside a jar |
 | `./mvnw -B clean verify` | what CI runs |
+
+## Oracle cheat sheet
+
+| Command | What it does |
+|---|---|
+| `docker start oracle-free` | start the database (after the first `docker run`) |
+| `docker logs -f oracle-free` | watch for `DATABASE IS READY TO USE!` |
+| `docker exec -it oracle-free sqlplus shopuser/shoppass@localhost/FREEPDB1` | open a SQL shell |
+| `nc -zv localhost 1521` | is the listener even accepting connections? |
+| `mvn compile exec:java -Dexec.mainClass=com.example.db.ConnectionCheck` | prove JDBC connectivity in isolation |
+
+| URL / error | Meaning |
+|---|---|
+| `jdbc:oracle:thin:@//host:1521/FREEPDB1` | service-name form — **use this** |
+| `jdbc:oracle:thin:@host:1521:FREE` | legacy SID form (note the `:`) |
+| `No suitable driver found` | wrong or missing driver dependency |
+| `ORA-12541: TNS:no listener` | database not running / wrong port |
+| `ORA-12514: service not known` | wrong service name |
+| `ORA-00942: table or view does not exist` | connected to the CDB instead of the PDB, or wrong schema |
+| `ORA-01950: no privileges on tablespace` | user needs `QUOTA UNLIMITED ON USERS` |

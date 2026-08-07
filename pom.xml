@@ -16,10 +16,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
-
-    <!-- Fixed typo -->
+    <database.url>jdbc:oracle:thin:@//localhost:1539/freepdb1</database.url>
+    <database.user>shopuser</database.user>
+    <database.password>shoppass</database.password>
     <shop.name>My Bookshop</shop.name>
     <junit.version>5.11.0</junit.version>
+    <ojdbc.version>23.6.0.24.10</ojdbc.version>
   </properties>
 
   <dependencyManagement>
@@ -52,6 +54,14 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
+    </dependency>
+
+
+    <dependency>
+      <groupId>com.oracle.database.jdbc</groupId>
+      <artifactId>ojdbc11</artifactId>
+      <version>${ojdbc.version}</version>
+      <scope>runtime</scope>
     </dependency>
 
   </dependencies>
@@ -116,16 +126,6 @@
 
     <plugins>
 
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>3.3.0</version>
-
-        <configuration>
-          <mainClass>com.example.App</mainClass>
-        </configuration>
-
-      </plugin>
 
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
@@ -141,6 +141,10 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
+        <version>3.3.0</version>
+        <configuration>
+          <mainClass>com.example.App</mainClass>
+        </configuration>
         <executions>
           <execution>
             <id>announce</id>
