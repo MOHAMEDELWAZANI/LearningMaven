@@ -118,6 +118,55 @@ public class DAOBook implements DAO{
     }
 
     @Override
+    public List<Book> findByAuthor(String author) {
+        List<Book> books=  new ArrayList<>();
+        try (Connection conn = DatabaseConnection.getInstance().getConnection();
+             PreparedStatement ps = conn.prepareStatement("select * from books where author = ?")) {
+            ps.setString(1, author);
+            try (ResultSet rs = ps.executeQuery()) {
+                while(rs.next()){
+                    Book b = new Book();
+                    b.setId(rs.getLong("id"));
+                    b.setAuthor(author);
+                    b.setPrice(rs.getDouble("price"));
+                    b.setTitle(rs.getString("title"));
+                    books.add(b);
+                }
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return books;
+    }
+
+    @Override
+    public int count() {
+        try(
+                Connection c = DatabaseConnection.getInstance().getConnection();
+                PreparedStatement ps = c.prepareStatement("SELECT COUNT(*) FROM books");
+                ResultSet rs = ps.executeQuery()
+                ){
+                     return rs.next() ? rs.getInt(1) : 0;
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    @Override
+    public void deleteAll() {
+        try (Connection c = DatabaseConnection.getInstance().getConnection();
+             PreparedStatement ps = c.prepareStatement("DELETE FROM books")) {
+
+            ps.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
     public Book findByTitle(String title) {
         Book b = new Book();
         try (Connection conn = DatabaseConnection.getInstance().getConnection();

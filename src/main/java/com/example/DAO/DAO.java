@@ -8,4 +8,7 @@ public interface DAO {
     Book findById(long id);
     boolean deleteById(long id);
     boolean update(Book book);
+    List<Book> findByAuthor(String author);
+    int count();
+    void deleteAll();
 }

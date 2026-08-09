@@ -5,10 +5,7 @@ import com.google.gson.GsonBuilder;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class BookShop {
     private List<Book> Books ;
@@ -40,7 +37,7 @@ public class BookShop {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         return gson.toJson(this.Books);
     }
-    public boolean removeByTittle(String title){
+    public boolean removeByTitle(String title){
         return Books.removeIf(b -> b.getTitle().equals(title));
     }
     public Optional<Book> findByTitle(String title){
@@ -52,6 +49,35 @@ public class BookShop {
         Book[] loaded = gson.fromJson(
                 new InputStreamReader(json, StandardCharsets.UTF_8), Book[].class);
         Books.addAll(Arrays.asList(loaded));
+    }
+
+    public boolean removeById(long id ){
+        return Books.removeIf(b -> b.getId() == id);
+    }
+    public boolean update(Book book){
+        for(Book b : Books){
+            if(b.getId() == book.getId()){
+                b.setTitle(book.getTitle());
+                b.setPrice(book.getPrice());
+                b.setAuthor(book.getAuthor());
+                return true;
+            }
+        } return false;
+    }
+
+    public List<Book> findByPriceRange(double minPrice , double maxPrice){
+        return Books.stream().filter(b -> b.getPrice()>= minPrice && b.getPrice()<= maxPrice).toList();
+    }
+    public List<Book> sortedByPrice() {
+        return Books.stream()
+                .sorted(Comparator.comparingDouble(Book::getPrice))
+                .toList();
+    }
+
+    public List<Book> sortedByTitle() {
+        return Books.stream()
+                .sorted(Comparator.comparing(Book::getTitle))
+                .toList();
     }
 
 

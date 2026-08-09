@@ -56,6 +56,13 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Without the engine, Surefire/Failsafe find no tests to run. -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+
 
     <dependency>
       <groupId>com.oracle.database.jdbc</groupId>
@@ -93,6 +100,11 @@
 
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
+
+        <plugin>
+          <artifactId>maven-failsafe-plugin</artifactId>
           <version>3.3.0</version>
         </plugin>
 
@@ -158,6 +170,29 @@
         </executions>
       </plugin>
 
+      <!-- Unit tests: *Test.java, run in the `test` phase. -->
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>**/*IT.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+
+      <!-- Integration tests: *IT.java, run in the `verify` phase (mvn verify). -->
+      <plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.6.0</version>
@@ -176,15 +211,27 @@
   <profiles>
 
     <profile>
-
-      <id>dev</id>
-
+      <id>prod</id>
       <properties>
-
-        <shop.name>My Dev Bookshop</shop.name>
-
+        <shop.name>My prod Bookshop</shop.name>
       </properties>
+    </profile>
 
+    <profile>
+      <id>test</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <shop.name>My test avctivte Bookshop</shop.name>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>dev</id>
+      <properties>
+        <shop.name>My Dev Bookshop</shop.name>
+      </properties>
     </profile>
 
   </profiles>

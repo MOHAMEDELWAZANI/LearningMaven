@@ -25,18 +25,9 @@ public class App {
         System.out.println("Welcome to " + config.getProperty("shop.name")
                 + " v" + config.getProperty("version"));
 
-        BookShop bookShop = new BookShop();
 
-        try (InputStream in = App.class.getResourceAsStream("/books.json")) {
-            bookShop.loadFrom(in);
-        } catch(Exception e){
-            e.printStackTrace();
-        }
 
-        List<Book> books = DAOFactory.getDAOBook().findAll();
-        for(Book b : books){
-            System.out.println(b);
-        }
+
 
 
     }

@@ -31,6 +31,10 @@
           <version>3.3.0</version>
         </plugin>
         <plugin>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
+        <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.4.2</version>
         </plugin>
@@ -87,6 +91,25 @@
         </configuration>
       </plugin>
       <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>**/*IT.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.6.0</version>
         <executions>
@@ -101,6 +124,18 @@
     </plugins>
   </build>
   <profiles>
+    <profile>
+      <id>prod</id>
+      <properties>
+        <shop.name>My prod Bookshop</shop.name>
+      </properties>
+    </profile>
+    <profile>
+      <id>test</id>
+      <properties>
+        <shop.name>My test avctivte Bookshop</shop.name>
+      </properties>
+    </profile>
     <profile>
       <id>dev</id>
       <properties>
@@ -141,6 +176,22 @@
         </exclusion>
       </exclusions>
     </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.11.0</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>junit-platform-engine</artifactId>
+          <groupId>org.junit.platform</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>apiguardian-api</artifactId>
+          <groupId>org.apiguardian</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
   </dependencies>
   <dependencyManagement>
     <dependencies>
@@ -155,10 +206,11 @@
   </dependencyManagement>
   <properties>
     <maven.compiler.release>17</maven.compiler.release>
-    <database.user>SYSTEM</database.user>
+    <database.user>shopuser</database.user>
     <shop.name>My Bookshop</shop.name>
-    <database.url>jdbc:oracle:thin:@localhost:1539:FREE</database.url>
-    <database.password>${env.DB_PASSWORD1}</database.password>
+    <ojdbc.version>23.6.0.24.10</ojdbc.version>
+    <database.url>jdbc:oracle:thin:@//localhost:1539/freepdb1</database.url>
+    <database.password>shoppass</database.password>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>5.11.0</junit.version>
   </properties>
